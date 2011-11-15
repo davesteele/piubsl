@@ -148,7 +148,7 @@ endobj
 % 'R12': class PDFInfo 
 12 0 obj
 << /Author ()
- /CreationDate (D:20111114191840+05'00')
+ /CreationDate (D:20111114193158+05'00')
  /Creator (\(unspecified\))
  /Keywords ()
  /Producer (ReportLab PDF Library - www.reportlab.com)
@@ -167,7 +167,7 @@ endobj
 << /Dest [ 9 0 R
  /XYZ
  62.69291
- 347.4488
+ 327.4488
  0 ]
  /Parent 13 0 R
  /Title (Usage) >>
@@ -183,7 +183,7 @@ endobj
 % 'R16': class PDFStream 
 16 0 obj
 % page stream
-<< /Length 5426 >>
+<< /Length 5460 >>
 stream
 1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
 q
@@ -239,20 +239,27 @@ Q
 Q
 Q
 q
-1 0 0 1 62.69291 326.4488 cm
+1 0 0 1 62.69291 339.4488 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (The database used for this output, 'db', is included in the repository.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 306.4488 cm
 q
 BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (Usage) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 308.4488 cm
+1 0 0 1 62.69291 288.4488 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Main program help:) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 83.24876 cm
+1 0 0 1 62.69291 87.24876 cm
 q
 q
 1 0 0 1 0 0 cm
@@ -262,10 +269,10 @@ q
 .662745 .662745 .662745 RG
 .5 w
 .960784 .960784 .862745 rg
-n -6 -6 468.6898 216 re B*
+n -6 -6 468.6898 192 re B*
 Q
 q
-BT 1 0 0 1 0 194 Tm 12 TL /F3 10 Tf 0 0 0 rg (# piubsl.py -h) Tj T* (usage: piubsl.py [-h] [-v] {initdb,addlog,linkreport,linkdetail} ...) Tj T*  T* (Analyze Piuparts broken symlinks) Tj T*  T* (Using log files available under e.g.) Tj T*  T* (    http://piuparts.debian.org/sid/broken_symlinks_issue.html) Tj T*  T* (analyze the frequency and source of "Broken symlink" warnings) Tj T*  T* (positional arguments) Tj T* (  {initdb,addlog,linkreport,linkdetail}) Tj T* (                        command help) Tj T* (    initdb              initialize the database file) Tj T* (    addlog              add a log file to the database) Tj T* (    linkreport          print a summary of broken symlinks found) Tj T* ET
+BT 1 0 0 1 0 170 Tm 12 TL /F3 10 Tf 0 0 0 rg (# piubsl.py -h) Tj T* (usage: piubsl.py [-h] [-v] {initdb,addlog,linkreport,linkdetail} ...) Tj T*  T* (Analyze Piuparts broken symlinks) Tj T*  T* (Using log files available under e.g.) Tj T*  T* (    http://piuparts.debian.org/sid/broken_symlinks_issue.html) Tj T*  T* (analyze the frequency and source of "Broken symlink" warnings) Tj T*  T* (positional arguments) Tj T* (  {initdb,addlog,linkreport,linkdetail}) Tj T* (                        command help) Tj T* (    initdb              initialize the database file) Tj T* ET
 Q
 Q
 Q
@@ -277,11 +284,11 @@ endobj
 % 'R17': class PDFStream 
 17 0 obj
 % page stream
-<< /Length 2697 >>
+<< /Length 2834 >>
 stream
 1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
 q
-1 0 0 1 62.69291 667.8236 cm
+1 0 0 1 62.69291 643.8236 cm
 q
 q
 1 0 0 1 0 0 cm
@@ -291,24 +298,24 @@ q
 .662745 .662745 .662745 RG
 .5 w
 .960784 .960784 .862745 rg
-n -6 -6 468.6898 96 re B*
+n -6 -6 468.6898 120 re B*
 Q
 q
-BT 1 0 0 1 0 74 Tm 12 TL /F3 10 Tf 0 0 0 rg (    linkdetail          print a summary of packages related to a broken link) Tj T*  T* (optional arguments:) Tj T* (  -h, --help            show this help message and exit) Tj T* (  -v) Tj T*  T* (use 'piubsl.py ) Tj (<) Tj (cmd) Tj (>) Tj ( -h for command-specific help) Tj T* ET
+BT 1 0 0 1 0 98 Tm 12 TL /F3 10 Tf 0 0 0 rg (    addlog              add a log file to the database) Tj T* (    linkreport          print a summary of broken symlinks found) Tj T* (    linkdetail          print a summary of packages related to a broken link) Tj T*  T* (optional arguments:) Tj T* (  -h, --help            show this help message and exit) Tj T* (  -v) Tj T*  T* (use 'piubsl.py ) Tj (<) Tj (cmd) Tj (>) Tj ( -h for command-specific help) Tj T* ET
 Q
 Q
 Q
 Q
 Q
 q
-1 0 0 1 62.69291 647.8236 cm
+1 0 0 1 62.69291 623.8236 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Initialize a database:) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 506.6236 cm
+1 0 0 1 62.69291 482.6236 cm
 q
 q
 1 0 0 1 0 0 cm
@@ -329,14 +336,14 @@ Q
 Q
 Q
 q
-1 0 0 1 62.69291 486.6236 cm
+1 0 0 1 62.69291 462.6236 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Add a log to the database:) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 333.4236 cm
+1 0 0 1 62.69291 309.4236 cm
 q
 q
 1 0 0 1 0 0 cm
@@ -357,14 +364,14 @@ Q
 Q
 Q
 q
-1 0 0 1 62.69291 313.4236 cm
+1 0 0 1 62.69291 289.4236 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (And output the link report:) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 172.2236 cm
+1 0 0 1 62.69291 148.2236 cm
 q
 q
 1 0 0 1 0 0 cm
@@ -426,18 +433,18 @@ xref
 0000002922 00000 n
 0000003056 00000 n
 0000003172 00000 n
-0000008697 00000 n
-0000011497 00000 n
-0000011603 00000 n
-0000011680 00000 n
+0000008731 00000 n
+0000011668 00000 n
+0000011774 00000 n
+0000011851 00000 n
 trailer
 << /ID 
  % ReportLab generated PDF document -- digest (http://www.reportlab.com) 
- [(\327\321\012\365&S0*\311.\010\347\203\215\361i) (\327\321\012\365&S0*\311.\010\347\203\215\361i)] 
+ [(D<\320\003\374\330Y\354i\034c\230\240=\037\365) (D<\320\003\374\330Y\354i\034c\230\240=\037\365)] 
 
  /Info 12 0 R
  /Root 11 0 R
  /Size 21 >>
 startxref
-11727
+11898
 %%EOF

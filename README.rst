@@ -48,7 +48,8 @@ This is a typical output, based on 30623 log files containing broken symlinks, c
    107 /usr/share/doc/libgtk-3-bin/README.gz -> ../libgtk-3-common/README.gz
     91 /usr/share/doc/python-simplejson/_static/sidebar.js -> ../../../javascript/sphinxdoc/1.0/sidebar.js
  ...
-  
+
+The database used for this output, 'db', is included in the repository. 
 
 Usage
 -----
