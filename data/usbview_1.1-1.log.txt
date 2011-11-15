@@ -1,0 +1,1809 @@
+Start: 2011-05-22 10:49:04 UTC
+
+Package: usbview
+Version: 1.1-1
+Installed-Size: 708
+Maintainer: Mark Brown <broonie@debian.org>
+Architecture: amd64
+Depends: libatk1.0-0 (>= 1.20.0), libc6 (>= 2.2.5), libcairo2 (>= 1.2.4), libfontconfig1 (>= 2.4.0), libfreetype6 (>= 2.2.1), libglib2.0-0 (>= 2.16.0), libgtk2.0-0 (>= 2.8.0), libpango1.0-0 (>= 1.14.0)
+Suggests: usbutils
+Description: USB device viewer
+ USBView is a small GTK+ application to show what the device tree of
+ the USB bus looks like. It shows a graphical representation of the
+ devices that are currently plugged in, showing the topology of the
+ USB bus. It also displays information on each individual device on
+ the bus.
+Homepage: http://www.kroah.com/linux-usb/
+Tag: hardware::detection, hardware::usb, interface::x11, role::program, scope::utility, uitoolkit::gtk, use::viewing, x11::application
+Section: x11
+Priority: optional
+Filename: pool/main/u/usbview/usbview_1.1-1_amd64.deb
+Size: 212190
+MD5sum: 805c28fe856fca6fb9318f87572c68bd
+SHA1: cbeb6aa0b9a9f32bc0b7d9e059d8b846b91532a7
+SHA256: cbb187df679a73738951cde90cb99cfef894001e623a9c231627b147142332b4
+
+Executing: sudo /org/piuparts.debian.org/sbin/piuparts --warn-symlinks --warn-on-others --skip-logrotatefiles-test --scriptsdir /etc/piuparts/scripts/ --tmpdir /org/piuparts.debian.org/tmp -ad sid -b sid.tar.gz --mirror http://piatti.debian.org/debian/  usbview
+Guessed: debian
+0m0.0s INFO: ------------------------------------------------------------------------------
+0m0.0s INFO: To quickly glance what went wrong, scroll down to the bottom of this logfile.
+0m0.0s INFO: FAQ available at http://wiki.debian.org/piuparts/FAQ
+0m0.0s INFO: ------------------------------------------------------------------------------
+0m0.0s INFO: piuparts version 0.40~201105022236 starting up.
+0m0.0s INFO: Command line arguments: /org/piuparts.debian.org/sbin/piuparts --warn-symlinks --warn-on-others --skip-logrotatefiles-test --scriptsdir /etc/piuparts/scripts/ --tmpdir /org/piuparts.debian.org/tmp -ad sid -b sid.tar.gz --mirror http://piatti.debian.org/debian/ usbview
+0m0.0s INFO: Running on: Linux piatti 2.6.32-5-amd64 #1 SMP Mon Mar 7 21:35:22 UTC 2011 x86_64
+0m0.0s DEBUG: Created temporary directory /org/piuparts.debian.org/tmp/tmpC0lgRW
+0m0.0s DEBUG: Unpacking sid.tar.gz into /org/piuparts.debian.org/tmp/tmpC0lgRW
+0m0.0s DEBUG: Starting command: ['tar', '-C', '/org/piuparts.debian.org/tmp/tmpC0lgRW', '-zxf', 'sid.tar.gz']
+0m5.5s DEBUG: Command ok: ['tar', '-C', '/org/piuparts.debian.org/tmp/tmpC0lgRW', '-zxf', 'sid.tar.gz']
+0m5.5s DEBUG: Created policy-rc.d and chmodded it.
+0m5.5s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'apt-get', 'update']
+0m20.3s DUMP: 
+  Get:1 http://piatti.debian.org sid InRelease [146 kB]
+  Ign http://piatti.debian.org sid/main amd64 Packages/DiffIndex
+  Ign http://piatti.debian.org sid/contrib amd64 Packages/DiffIndex
+  Ign http://piatti.debian.org sid/non-free amd64 Packages/DiffIndex
+  Ign http://piatti.debian.org sid/contrib TranslationIndex
+  Ign http://piatti.debian.org sid/main TranslationIndex
+  Ign http://piatti.debian.org sid/non-free TranslationIndex
+  Get:2 http://piatti.debian.org sid/main amd64 Packages [9557 kB]
+  Get:3 http://piatti.debian.org sid/contrib amd64 Packages [77.0 kB]
+  Get:4 http://piatti.debian.org sid/non-free amd64 Packages [144 kB]
+  Ign http://piatti.debian.org sid/contrib Translation-en
+  Ign http://piatti.debian.org sid/main Translation-en
+  Ign http://piatti.debian.org sid/non-free Translation-en
+  Fetched 9924 kB in 1s (5659 kB/s)
+  Reading package lists...
+0m20.3s DEBUG: Command ok: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'apt-get', 'update']
+0m20.3s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'mount', '-t', 'proc', 'proc', '/proc']
+0m20.3s DEBUG: Command ok: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'mount', '-t', 'proc', 'proc', '/proc']
+0m20.3s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'apt-get', '-yf', 'upgrade']
+0m37.1s DUMP: 
+  Reading package lists...
+  Building dependency tree...
+  Correcting dependencies... Done
+  The following packages will be upgraded:
+    debianutils dpkg e2fslibs e2fsprogs gcc-4.4-base gcc-4.6-base initscripts
+    libc-bin libc6 libcomerr2 libgcc1 liblocale-gettext-perl libreadline6
+    libselinux1 libss2 libstdc++6 libtext-charwidth-perl libtext-iconv-perl
+    perl-base readline-common sysv-rc sysvinit sysvinit-utils
+  23 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+  Need to get 11.6 MB of archives.
+  After this operation, 287 kB disk space will be freed.
+  Get:1 http://piatti.debian.org/debian/ sid/main debianutils amd64 4 [75.4 kB]
+  Get:2 http://piatti.debian.org/debian/ sid/main dpkg amd64 1.16.0.3 [2227 kB]
+  Get:3 http://piatti.debian.org/debian/ sid/main libc-bin amd64 2.13-4 [1079 kB]
+  Get:4 http://piatti.debian.org/debian/ sid/main libc6 amd64 2.13-4 [4312 kB]
+  Get:5 http://piatti.debian.org/debian/ sid/main gcc-4.6-base amd64 4.6.0-8 [130 kB]
+  Get:6 http://piatti.debian.org/debian/ sid/main libgcc1 amd64 1:4.6.0-8 [42.8 kB]
+  Get:7 http://piatti.debian.org/debian/ sid/main libstdc++6 amd64 4.6.0-8 [337 kB]
+  Get:8 http://piatti.debian.org/debian/ sid/main e2fslibs amd64 1.41.12-4 [147 kB]
+  Get:9 http://piatti.debian.org/debian/ sid/main e2fsprogs amd64 1.41.12-4 [818 kB]
+  Get:10 http://piatti.debian.org/debian/ sid/main perl-base amd64 5.12.3-7 [1477 kB]
+  Get:11 http://piatti.debian.org/debian/ sid/main libselinux1 amd64 2.0.98-1+b1 [89.2 kB]
+  Get:12 http://piatti.debian.org/debian/ sid/main sysvinit amd64 2.88dsf-13.7 [123 kB]
+  Get:13 http://piatti.debian.org/debian/ sid/main sysvinit-utils amd64 2.88dsf-13.7 [125 kB]
+  Get:14 http://piatti.debian.org/debian/ sid/main liblocale-gettext-perl amd64 1.05-6+b1 [22.3 kB]
+  Get:15 http://piatti.debian.org/debian/ sid/main readline-common all 6.2-2 [54.8 kB]
+  Get:16 http://piatti.debian.org/debian/ sid/main libreadline6 amd64 6.2-2 [164 kB]
+  Get:17 http://piatti.debian.org/debian/ sid/main sysv-rc all 2.88dsf-13.7 [77.1 kB]
+  Get:18 http://piatti.debian.org/debian/ sid/main initscripts amd64 2.88dsf-13.7 [77.4 kB]
+  Get:19 http://piatti.debian.org/debian/ sid/main libcomerr2 amd64 1.41.12-4 [49.9 kB]
+  Get:20 http://piatti.debian.org/debian/ sid/main libss2 amd64 1.41.12-4 [55.2 kB]
+  Get:21 http://piatti.debian.org/debian/ sid/main gcc-4.4-base amd64 4.4.6-3 [125 kB]
+  Get:22 http://piatti.debian.org/debian/ sid/main libtext-charwidth-perl amd64 0.04-6+b1 [12.5 kB]
+  Get:23 http://piatti.debian.org/debian/ sid/main libtext-iconv-perl amd64 1.7-2+b1 [19.2 kB]
+  debconf: delaying package configuration, since apt-utils is not installed
+  Fetched 11.6 MB in 0s (43.8 MB/s)
+  (Reading database ... 6582 files and directories currently installed.)
+  Preparing to replace debianutils 3.4.4 (using .../debianutils_4_amd64.deb) ...
+  Unpacking replacement debianutils ...
+  Setting up debianutils (4) ...
+  (Reading database ... 6598 files and directories currently installed.)
+  Preparing to replace dpkg 1.16.0.2 (using .../dpkg_1.16.0.3_amd64.deb) ...
+  Unpacking replacement dpkg ...
+  Setting up dpkg (1.16.0.3) ...
+  (Reading database ... 6598 files and directories currently installed.)
+  Preparing to replace libc-bin 2.13-1 (using .../libc-bin_2.13-4_amd64.deb) ...
+  Unpacking replacement libc-bin ...
+  Setting up libc-bin (2.13-4) ...
+  (Reading database ... 6598 files and directories currently installed.)
+  Preparing to replace libc6 2.13-1 (using .../libc6_2.13-4_amd64.deb) ...
+  Unpacking replacement libc6 ...
+  Setting up libc6 (2.13-4) ...
+  (Reading database ... 6601 files and directories currently installed.)
+  Preparing to replace gcc-4.6-base 4.6.0-6 (using .../gcc-4.6-base_4.6.0-8_amd64.deb) ...
+  Unpacking replacement gcc-4.6-base ...
+  Setting up gcc-4.6-base (4.6.0-8) ...
+  (Reading database ... 6601 files and directories currently installed.)
+  Preparing to replace libgcc1 1:4.6.0-6 (using .../libgcc1_1%3a4.6.0-8_amd64.deb) ...
+  Unpacking replacement libgcc1 ...
+  Setting up libgcc1 (1:4.6.0-8) ...
+  (Reading database ... 6601 files and directories currently installed.)
+  Preparing to replace libstdc++6 4.6.0-6 (using .../libstdc++6_4.6.0-8_amd64.deb) ...
+  Unpacking replacement libstdc++6 ...
+  Setting up libstdc++6 (4.6.0-8) ...
+  (Reading database ... 6601 files and directories currently installed.)
+  Preparing to replace e2fslibs 1.41.12-2 (using .../e2fslibs_1.41.12-4_amd64.deb) ...
+  Unpacking replacement e2fslibs ...
+  Setting up e2fslibs (1.41.12-4) ...
+  (Reading database ... 6601 files and directories currently installed.)
+  Preparing to replace e2fsprogs 1.41.12-2 (using .../e2fsprogs_1.41.12-4_amd64.deb) ...
+  Unpacking replacement e2fsprogs ...
+  Setting up e2fsprogs (1.41.12-4) ...
+  (Reading database ... 6601 files and directories currently installed.)
+  Preparing to replace perl-base 5.12.3-6 (using .../perl-base_5.12.3-7_amd64.deb) ...
+  Unpacking replacement perl-base ...
+  Setting up perl-base (5.12.3-7) ...
+  (Reading database ... 6601 files and directories currently installed.)
+  Preparing to replace libselinux1 2.0.98-1 (using .../libselinux1_2.0.98-1+b1_amd64.deb) ...
+  Unpacking replacement libselinux1 ...
+  Setting up libselinux1 (2.0.98-1+b1) ...
+  (Reading database ... 6601 files and directories currently installed.)
+  Preparing to replace sysvinit 2.88dsf-13.2 (using .../sysvinit_2.88dsf-13.7_amd64.deb) ...
+  Unpacking replacement sysvinit ...
+  Setting up sysvinit (2.88dsf-13.7) ...
+  init: timeout opening/writing control channel /dev/initctl
+  (Reading database ... 6601 files and directories currently installed.)
+  Preparing to replace sysvinit-utils 2.88dsf-13.2 (using .../sysvinit-utils_2.88dsf-13.7_amd64.deb) ...
+  Unpacking replacement sysvinit-utils ...
+  Setting up sysvinit-utils (2.88dsf-13.7) ...
+  (Reading database ... 6601 files and directories currently installed.)
+  Preparing to replace liblocale-gettext-perl 1.05-6 (using .../liblocale-gettext-perl_1.05-6+b1_amd64.deb) ...
+  Unpacking replacement liblocale-gettext-perl ...
+  Preparing to replace readline-common 6.2-1 (using .../readline-common_6.2-2_all.deb) ...
+  Unpacking replacement readline-common ...
+  Setting up readline-common (6.2-2) ...
+  (Reading database ... 6601 files and directories currently installed.)
+  Preparing to replace libreadline6 6.2-1 (using .../libreadline6_6.2-2_amd64.deb) ...
+  Unpacking replacement libreadline6 ...
+  Setting up libreadline6 (6.2-2) ...
+  (Reading database ... 6601 files and directories currently installed.)
+  Preparing to replace sysv-rc 2.88dsf-13.2 (using .../sysv-rc_2.88dsf-13.7_all.deb) ...
+  Unpacking replacement sysv-rc ...
+  Setting up sysv-rc (2.88dsf-13.7) ...
+  (Reading database ... 6601 files and directories currently installed.)
+  Preparing to replace initscripts 2.88dsf-13.2 (using .../initscripts_2.88dsf-13.7_amd64.deb) ...
+  Unpacking replacement initscripts ...
+  Setting up initscripts (2.88dsf-13.7) ...
+  Installing new version of config file /etc/init.d/bootmisc.sh ...
+  Installing new version of config file /etc/init.d/checkfs.sh ...
+  Installing new version of config file /etc/init.d/checkroot.sh ...
+  Installing new version of config file /etc/init.d/mountdevsubfs.sh ...
+  Installing new version of config file /etc/init.d/mountkernfs.sh ...
+  Installing new version of config file /etc/init.d/mtab.sh ...
+  Installing new version of config file /etc/init.d/sendsigs ...
+  Installing new version of config file /etc/init.d/umountfs ...
+  Installing new version of config file /etc/init.d/umountnfs.sh ...
+  Installing new version of config file /etc/default/tmpfs ...
+  Installing new version of config file /etc/network/if-up.d/mountnfs ...
+  guest environment detected: Linking /run to /var/run
+  guest environment detected: Linking /run/lock to /var/lock
+  guest environment detected: Linking /run/shm to /dev/shm
+  (Reading database ... 6602 files and directories currently installed.)
+  Preparing to replace libcomerr2 1.41.12-2 (using .../libcomerr2_1.41.12-4_amd64.deb) ...
+  Unpacking replacement libcomerr2 ...
+  Setting up libcomerr2 (1.41.12-4) ...
+  (Reading database ... 6602 files and directories currently installed.)
+  Preparing to replace libss2 1.41.12-2 (using .../libss2_1.41.12-4_amd64.deb) ...
+  Unpacking replacement libss2 ...
+  Setting up libss2 (1.41.12-4) ...
+  (Reading database ... 6602 files and directories currently installed.)
+  Preparing to replace gcc-4.4-base 4.4.6-2 (using .../gcc-4.4-base_4.4.6-3_amd64.deb) ...
+  Unpacking replacement gcc-4.4-base ...
+  Preparing to replace libtext-charwidth-perl 0.04-6 (using .../libtext-charwidth-perl_0.04-6+b1_amd64.deb) ...
+  Unpacking replacement libtext-charwidth-perl ...
+  Preparing to replace libtext-iconv-perl 1.7-2 (using .../libtext-iconv-perl_1.7-2+b1_amd64.deb) ...
+  Unpacking replacement libtext-iconv-perl ...
+  Setting up liblocale-gettext-perl (1.05-6+b1) ...
+  Setting up gcc-4.4-base (4.4.6-3) ...
+  Setting up libtext-charwidth-perl (0.04-6+b1) ...
+  Setting up libtext-iconv-perl (1.7-2+b1) ...
+0m37.1s DEBUG: Command ok: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'apt-get', '-yf', 'upgrade']
+0m37.1s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'apt-get', 'clean']
+0m37.2s DEBUG: Command ok: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'apt-get', 'clean']
+0m37.2s DEBUG: Copying scriptsdir to /org/piuparts.debian.org/tmp/tmpC0lgRW/tmp/scripts/
+0m37.2s INFO: Running scripts post_setup
+0m37.8s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--get-selections', '*']
+0m37.8s DUMP: 
+  apt						install
+  base-files					install
+  base-passwd					install
+  bash						install
+  bsdutils					install
+  coreutils					install
+  dash						install
+  debconf						install
+  debconf-i18n					install
+  debian-archive-keyring				install
+  debianutils					install
+  diffutils					install
+  dpkg						install
+  e2fslibs					install
+  e2fsprogs					install
+  findutils					install
+  gcc-4.4-base					install
+  gcc-4.5-base					install
+  gcc-4.6-base					install
+  gnupg						install
+  gpgv						install
+  grep						install
+  gzip						install
+  hostname					install
+  initscripts					install
+  insserv						install
+  libacl1						install
+  libattr1					install
+  libblkid1					install
+  libbz2-1.0					install
+  libc-bin					install
+  libc6						install
+  libcomerr2					install
+  libdb5.1					install
+  libgcc1						install
+  liblocale-gettext-perl				install
+  liblzma2					install
+  libncurses5					install
+  libpam-modules					install
+  libpam-runtime					install
+  libpam0g					install
+  libreadline6					install
+  libselinux1					install
+  libsepol1					install
+  libslang2					install
+  libss2						install
+  libstdc++6					install
+  libtext-charwidth-perl				install
+  libtext-iconv-perl				install
+  libtext-wrapi18n-perl				install
+  libusb-0.1-4					install
+  libuuid1					install
+  login						install
+  lsb-base					install
+  mawk						install
+  mount						install
+  ncurses-base					install
+  ncurses-bin					install
+  passwd						install
+  perl-base					install
+  readline-common					install
+  sed						install
+  sensible-utils					install
+  sysv-rc						install
+  sysvinit					install
+  sysvinit-utils					install
+  tar						install
+  tzdata						install
+  util-linux					install
+  xz-utils					install
+  zlib1g						install
+0m37.8s DEBUG: Command ok: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--get-selections', '*']
+0m37.8s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'apt-cache', 'show', 'usbview']
+0m38.1s DUMP: 
+  Package: usbview
+  Version: 1.1-1
+  Installed-Size: 708
+  Maintainer: Mark Brown <broonie@debian.org>
+  Architecture: amd64
+  Depends: libatk1.0-0 (>= 1.20.0), libc6 (>= 2.2.5), libcairo2 (>= 1.2.4), libfontconfig1 (>= 2.4.0), libfreetype6 (>= 2.2.1), libglib2.0-0 (>= 2.16.0), libgtk2.0-0 (>= 2.8.0), libpango1.0-0 (>= 1.14.0)
+  Suggests: usbutils
+  Description: USB device viewer
+   USBView is a small GTK+ application to show what the device tree of
+   the USB bus looks like. It shows a graphical representation of the
+   devices that are currently plugged in, showing the topology of the
+   USB bus. It also displays information on each individual device on
+   the bus.
+  Homepage: http://www.kroah.com/linux-usb/
+  Tag: hardware::detection, hardware::usb, interface::x11, role::program, scope::utility, uitoolkit::gtk, use::viewing, x11::application
+  Section: x11
+  Priority: optional
+  Filename: pool/main/u/usbview/usbview_1.1-1_amd64.deb
+  Size: 212190
+  MD5sum: 805c28fe856fca6fb9318f87572c68bd
+  SHA1: cbeb6aa0b9a9f32bc0b7d9e059d8b846b91532a7
+  SHA256: cbb187df679a73738951cde90cb99cfef894001e623a9c231627b147142332b4
+0m38.1s DEBUG: Command ok: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'apt-cache', 'show', 'usbview']
+0m38.1s DEBUG: Starting command: ['dpkg-deb', '-b', '/org/piuparts.debian.org/tmp/tmpbnNWbz/piuparts-depends-dummy']
+0m38.1s DUMP: 
+  dpkg-deb: building package `piuparts-depends-dummy' in `/org/piuparts.debian.org/tmp/tmpbnNWbz/piuparts-depends-dummy.deb'.
+0m38.1s DEBUG: Command ok: ['dpkg-deb', '-b', '/org/piuparts.debian.org/tmp/tmpbnNWbz/piuparts-depends-dummy']
+0m38.1s DEBUG: Copying /org/piuparts.debian.org/tmp/tmpbnNWbz/piuparts-depends-dummy.deb to /org/piuparts.debian.org/tmp/tmpC0lgRW/tmp
+0m38.1s INFO: Running scripts pre_install
+0m38.1s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'tmp/scripts/pre_install_exceptions']
+0m38.1s DUMP: 
+  Debug: running script tmp/scripts/pre_install_exceptions
+  Enter new UNIX password: Retype new UNIX password: passwd: password updated successfully
+  yes: standard output: Broken pipe
+  yes: write error
+0m38.1s DEBUG: Command ok: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'tmp/scripts/pre_install_exceptions']
+0m38.1s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '-i', 'tmp/piuparts-depends-dummy.deb']
+0m38.2s DUMP: 
+  Selecting previously deselected package piuparts-depends-dummy.
+  (Reading database ... 6602 files and directories currently installed.)
+  Unpacking piuparts-depends-dummy (from tmp/piuparts-depends-dummy.deb) ...
+  dpkg: dependency problems prevent configuration of piuparts-depends-dummy:
+   piuparts-depends-dummy depends on libatk1.0-0 (>= 1.20.0); however:
+    Package libatk1.0-0 is not installed.
+   piuparts-depends-dummy depends on libcairo2 (>= 1.2.4); however:
+    Package libcairo2 is not installed.
+   piuparts-depends-dummy depends on libfontconfig1 (>= 2.4.0); however:
+    Package libfontconfig1 is not installed.
+   piuparts-depends-dummy depends on libfreetype6 (>= 2.2.1); however:
+    Package libfreetype6 is not installed.
+   piuparts-depends-dummy depends on libglib2.0-0 (>= 2.16.0); however:
+    Package libglib2.0-0 is not installed.
+   piuparts-depends-dummy depends on libgtk2.0-0 (>= 2.8.0); however:
+    Package libgtk2.0-0 is not installed.
+   piuparts-depends-dummy depends on libpango1.0-0 (>= 1.14.0); however:
+    Package libpango1.0-0 is not installed.
+  dpkg: error processing piuparts-depends-dummy (--install):
+   dependency problems - leaving unconfigured
+  Errors were encountered while processing:
+   piuparts-depends-dummy
+0m38.2s DEBUG: Command failed (status=1), but ignoring error: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '-i', 'tmp/piuparts-depends-dummy.deb']
+0m38.2s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'apt-get', '-yf', 'install']
+1m3.0s DUMP: 
+  Reading package lists...
+  Building dependency tree...
+  Reading state information...
+  Correcting dependencies... Done
+  The following extra packages will be installed:
+    fontconfig fontconfig-config libatk1.0-0 libatk1.0-data libavahi-client3
+    libavahi-common-data libavahi-common3 libcairo2 libcups2 libdatrie1
+    libdbus-1-3 libexpat1 libfontconfig1 libfreetype6 libgcrypt11
+    libgdk-pixbuf2.0-0 libglib2.0-0 libgnutls26 libgpg-error0 libgssapi-krb5-2
+    libgtk2.0-0 libgtk2.0-common libjasper1 libjpeg62 libk5crypto3 libkeyutils1
+    libkrb5-3 libkrb5support0 libpango1.0-0 libpcre3 libpixman-1-0 libpng12-0
+    libtasn1-3 libthai-data libthai0 libtiff4 libx11-6 libx11-data libxau6
+    libxcb-render0 libxcb-shm0 libxcb1 libxcomposite1 libxcursor1 libxdamage1
+    libxdmcp6 libxext6 libxfixes3 libxft2 libxi6 libxinerama1 libxml2 libxrandr2
+    libxrender1 shared-mime-info ttf-dejavu-core ucf
+  Suggested packages:
+    defoma cups-common rng-tools gnutls-bin krb5-doc krb5-user librsvg2-common
+    gvfs libjasper-runtime ttf-baekmuk ttf-arphic-gbsn00lp ttf-arphic-bsmi00lp
+    ttf-arphic-gkai00mp ttf-arphic-bkai00mp
+  Recommended packages:
+    dbus libglib2.0-data hicolor-icon-theme libgtk2.0-bin x-ttcidfont-conf
+    xml-core
+  The following NEW packages will be installed:
+    fontconfig fontconfig-config libatk1.0-0 libatk1.0-data libavahi-client3
+    libavahi-common-data libavahi-common3 libcairo2 libcups2 libdatrie1
+    libdbus-1-3 libexpat1 libfontconfig1 libfreetype6 libgcrypt11
+    libgdk-pixbuf2.0-0 libglib2.0-0 libgnutls26 libgpg-error0 libgssapi-krb5-2
+    libgtk2.0-0 libgtk2.0-common libjasper1 libjpeg62 libk5crypto3 libkeyutils1
+    libkrb5-3 libkrb5support0 libpango1.0-0 libpcre3 libpixman-1-0 libpng12-0
+    libtasn1-3 libthai-data libthai0 libtiff4 libx11-6 libx11-data libxau6
+    libxcb-render0 libxcb-shm0 libxcb1 libxcomposite1 libxcursor1 libxdamage1
+    libxdmcp6 libxext6 libxfixes3 libxft2 libxi6 libxinerama1 libxml2 libxrandr2
+    libxrender1 shared-mime-info ttf-dejavu-core ucf
+  0 upgraded, 57 newly installed, 0 to remove and 0 not upgraded.
+  1 not fully installed or removed.
+  Need to get 24.3 MB of archives.
+  After this operation, 66.6 MB of additional disk space will be used.
+  Get:1 http://piatti.debian.org/debian/ sid/main libpcre3 amd64 8.12-3 [258 kB]
+  Get:2 http://piatti.debian.org/debian/ sid/main libglib2.0-0 amd64 2.28.6-1 [1648 kB]
+  Get:3 http://piatti.debian.org/debian/ sid/main libatk1.0-data all 2.0.0-1 [214 kB]
+  Get:4 http://piatti.debian.org/debian/ sid/main libatk1.0-0 amd64 2.0.0-1 [92.6 kB]
+  Get:5 http://piatti.debian.org/debian/ sid/main libexpat1 amd64 2.0.1-7 [137 kB]
+  Get:6 http://piatti.debian.org/debian/ sid/main libfreetype6 amd64 2.4.4-1 [415 kB]
+  Get:7 http://piatti.debian.org/debian/ sid/main ucf all 3.0025+nmu2 [70.6 kB]
+  Get:8 http://piatti.debian.org/debian/ sid/main ttf-dejavu-core all 2.33-1 [1550 kB]
+  Get:9 http://piatti.debian.org/debian/ sid/main fontconfig-config all 2.8.0-2.2 [218 kB]
+  Get:10 http://piatti.debian.org/debian/ sid/main libfontconfig1 amd64 2.8.0-2.2 [284 kB]
+  Get:11 http://piatti.debian.org/debian/ sid/main libpixman-1-0 amd64 0.21.8-1 [364 kB]
+  Get:12 http://piatti.debian.org/debian/ sid/main libpng12-0 amd64 1.2.44-2 [182 kB]
+  Get:13 http://piatti.debian.org/debian/ sid/main libxau6 amd64 1:1.0.6-1 [16.8 kB]
+  Get:14 http://piatti.debian.org/debian/ sid/main libxdmcp6 amd64 1:1.1.0-1 [22.5 kB]
+  Get:15 http://piatti.debian.org/debian/ sid/main libxcb1 amd64 1.7-2 [44.5 kB]
+  Get:16 http://piatti.debian.org/debian/ sid/main libx11-data all 2:1.4.3-1 [186 kB]
+  Get:17 http://piatti.debian.org/debian/ sid/main libx11-6 amd64 2:1.4.3-1 [890 kB]
+  Get:18 http://piatti.debian.org/debian/ sid/main libxcb-render0 amd64 1.7-2 [15.9 kB]
+  Get:19 http://piatti.debian.org/debian/ sid/main libxcb-shm0 amd64 1.7-2 [9200 B]
+  Get:20 http://piatti.debian.org/debian/ sid/main libxrender1 amd64 1:0.9.6-1 [30.9 kB]
+  Get:21 http://piatti.debian.org/debian/ sid/main libcairo2 amd64 1.10.2-6 [956 kB]
+  Get:22 http://piatti.debian.org/debian/ sid/main libgtk2.0-common all 2.24.4-3 [7205 kB]
+  Get:23 http://piatti.debian.org/debian/ sid/main libavahi-common-data amd64 0.6.30-3 [130 kB]
+  Get:24 http://piatti.debian.org/debian/ sid/main libavahi-common3 amd64 0.6.30-3 [54.1 kB]
+  Get:25 http://piatti.debian.org/debian/ sid/main libdbus-1-3 amd64 1.4.8-3 [161 kB]
+  Get:26 http://piatti.debian.org/debian/ sid/main libavahi-client3 amd64 0.6.30-3 [58.5 kB]
+  Get:27 http://piatti.debian.org/debian/ sid/main libgpg-error0 amd64 1.10-0.3 [68.7 kB]
+  Get:28 http://piatti.debian.org/debian/ sid/main libgcrypt11 amd64 1.4.6-5 [284 kB]
+  Get:29 http://piatti.debian.org/debian/ sid/main libtasn1-3 amd64 2.9-3 [64.1 kB]
+  Get:30 http://piatti.debian.org/debian/ sid/main libgnutls26 amd64 2.10.5-1+b1 [622 kB]
+  Get:31 http://piatti.debian.org/debian/ sid/main libkeyutils1 amd64 1.4-4 [7126 B]
+  Get:32 http://piatti.debian.org/debian/ sid/main libkrb5support0 amd64 1.9+dfsg-1+b1 [46.7 kB]
+  Get:33 http://piatti.debian.org/debian/ sid/main libk5crypto3 amd64 1.9+dfsg-1+b1 [112 kB]
+  Get:34 http://piatti.debian.org/debian/ sid/main libkrb5-3 amd64 1.9+dfsg-1+b1 [383 kB]
+  Get:35 http://piatti.debian.org/debian/ sid/main libgssapi-krb5-2 amd64 1.9+dfsg-1+b1 [144 kB]
+  Get:36 http://piatti.debian.org/debian/ sid/main libcups2 amd64 1.4.6-5 [246 kB]
+  Get:37 http://piatti.debian.org/debian/ sid/main libjpeg62 amd64 6b1-1 [94.0 kB]
+  Get:38 http://piatti.debian.org/debian/ sid/main libjasper1 amd64 1.900.1-7+b1 [157 kB]
+  Get:39 http://piatti.debian.org/debian/ sid/main libtiff4 amd64 3.9.5-1 [200 kB]
+  Get:40 http://piatti.debian.org/debian/ sid/main libgdk-pixbuf2.0-0 amd64 2.23.3-3 [678 kB]
+  Get:41 http://piatti.debian.org/debian/ sid/main libdatrie1 amd64 0.2.4-2 [27.4 kB]
+  Get:42 http://piatti.debian.org/debian/ sid/main libthai-data all 0.1.15-1 [201 kB]
+  Get:43 http://piatti.debian.org/debian/ sid/main libthai0 amd64 0.1.15-1 [42.2 kB]
+  Get:44 http://piatti.debian.org/debian/ sid/main libxft2 amd64 2.2.0-2 [58.5 kB]
+  Get:45 http://piatti.debian.org/debian/ sid/main fontconfig amd64 2.8.0-2.2 [335 kB]
+  Get:46 http://piatti.debian.org/debian/ sid/main libpango1.0-0 amd64 1.28.3-6 [441 kB]
+  Get:47 http://piatti.debian.org/debian/ sid/main libxcomposite1 amd64 1:0.4.3-1 [16.5 kB]
+  Get:48 http://piatti.debian.org/debian/ sid/main libxfixes3 amd64 1:5.0-2 [21.4 kB]
+  Get:49 http://piatti.debian.org/debian/ sid/main libxcursor1 amd64 1:1.1.11-1 [26.4 kB]
+  Get:50 http://piatti.debian.org/debian/ sid/main libxdamage1 amd64 1:1.1.3-1 [14.1 kB]
+  Get:51 http://piatti.debian.org/debian/ sid/main libxext6 amd64 2:1.3.0-1 [52.3 kB]
+  Get:52 http://piatti.debian.org/debian/ sid/main libxi6 amd64 2:1.4.2-1 [64.5 kB]
+  Get:53 http://piatti.debian.org/debian/ sid/main libxinerama1 amd64 2:1.1.1-1 [15.7 kB]
+  Get:54 http://piatti.debian.org/debian/ sid/main libxrandr2 amd64 2:1.3.1-1 [31.5 kB]
+  Get:55 http://piatti.debian.org/debian/ sid/main libxml2 amd64 2.7.8.dfsg-2+b1 [885 kB]
+  Get:56 http://piatti.debian.org/debian/ sid/main shared-mime-info amd64 0.90-1 [1014 kB]
+  Get:57 http://piatti.debian.org/debian/ sid/main libgtk2.0-0 amd64 2.24.4-3 [2710 kB]
+  debconf: delaying package configuration, since apt-utils is not installed
+  Fetched 24.3 MB in 0s (37.2 MB/s)
+  Selecting previously deselected package libpcre3.
+  (Reading database ... 6602 files and directories currently installed.)
+  Unpacking libpcre3 (from .../libpcre3_8.12-3_amd64.deb) ...
+  Selecting previously deselected package libglib2.0-0.
+  Unpacking libglib2.0-0 (from .../libglib2.0-0_2.28.6-1_amd64.deb) ...
+  Selecting previously deselected package libatk1.0-data.
+  Unpacking libatk1.0-data (from .../libatk1.0-data_2.0.0-1_all.deb) ...
+  Selecting previously deselected package libatk1.0-0.
+  Unpacking libatk1.0-0 (from .../libatk1.0-0_2.0.0-1_amd64.deb) ...
+  Selecting previously deselected package libexpat1.
+  Unpacking libexpat1 (from .../libexpat1_2.0.1-7_amd64.deb) ...
+  Selecting previously deselected package libfreetype6.
+  Unpacking libfreetype6 (from .../libfreetype6_2.4.4-1_amd64.deb) ...
+  Selecting previously deselected package ucf.
+  Unpacking ucf (from .../ucf_3.0025+nmu2_all.deb) ...
+  Moving old data out of the way
+  Selecting previously deselected package ttf-dejavu-core.
+  Unpacking ttf-dejavu-core (from .../ttf-dejavu-core_2.33-1_all.deb) ...
+  Selecting previously deselected package fontconfig-config.
+  Unpacking fontconfig-config (from .../fontconfig-config_2.8.0-2.2_all.deb) ...
+  Selecting previously deselected package libfontconfig1.
+  Unpacking libfontconfig1 (from .../libfontconfig1_2.8.0-2.2_amd64.deb) ...
+  Selecting previously deselected package libpixman-1-0.
+  Unpacking libpixman-1-0 (from .../libpixman-1-0_0.21.8-1_amd64.deb) ...
+  Selecting previously deselected package libpng12-0.
+  Unpacking libpng12-0 (from .../libpng12-0_1.2.44-2_amd64.deb) ...
+  Selecting previously deselected package libxau6.
+  Unpacking libxau6 (from .../libxau6_1%3a1.0.6-1_amd64.deb) ...
+  Selecting previously deselected package libxdmcp6.
+  Unpacking libxdmcp6 (from .../libxdmcp6_1%3a1.1.0-1_amd64.deb) ...
+  Selecting previously deselected package libxcb1.
+  Unpacking libxcb1 (from .../libxcb1_1.7-2_amd64.deb) ...
+  Selecting previously deselected package libx11-data.
+  Unpacking libx11-data (from .../libx11-data_2%3a1.4.3-1_all.deb) ...
+  Selecting previously deselected package libx11-6.
+  Unpacking libx11-6 (from .../libx11-6_2%3a1.4.3-1_amd64.deb) ...
+  Selecting previously deselected package libxcb-render0.
+  Unpacking libxcb-render0 (from .../libxcb-render0_1.7-2_amd64.deb) ...
+  Selecting previously deselected package libxcb-shm0.
+  Unpacking libxcb-shm0 (from .../libxcb-shm0_1.7-2_amd64.deb) ...
+  Selecting previously deselected package libxrender1.
+  Unpacking libxrender1 (from .../libxrender1_1%3a0.9.6-1_amd64.deb) ...
+  Selecting previously deselected package libcairo2.
+  Unpacking libcairo2 (from .../libcairo2_1.10.2-6_amd64.deb) ...
+  Selecting previously deselected package libgtk2.0-common.
+  Unpacking libgtk2.0-common (from .../libgtk2.0-common_2.24.4-3_all.deb) ...
+  Selecting previously deselected package libavahi-common-data.
+  Unpacking libavahi-common-data (from .../libavahi-common-data_0.6.30-3_amd64.deb) ...
+  Selecting previously deselected package libavahi-common3.
+  Unpacking libavahi-common3 (from .../libavahi-common3_0.6.30-3_amd64.deb) ...
+  Selecting previously deselected package libdbus-1-3.
+  Unpacking libdbus-1-3 (from .../libdbus-1-3_1.4.8-3_amd64.deb) ...
+  Selecting previously deselected package libavahi-client3.
+  Unpacking libavahi-client3 (from .../libavahi-client3_0.6.30-3_amd64.deb) ...
+  Selecting previously deselected package libgpg-error0.
+  Unpacking libgpg-error0 (from .../libgpg-error0_1.10-0.3_amd64.deb) ...
+  Selecting previously deselected package libgcrypt11.
+  Unpacking libgcrypt11 (from .../libgcrypt11_1.4.6-5_amd64.deb) ...
+  Selecting previously deselected package libtasn1-3.
+  Unpacking libtasn1-3 (from .../libtasn1-3_2.9-3_amd64.deb) ...
+  Selecting previously deselected package libgnutls26.
+  Unpacking libgnutls26 (from .../libgnutls26_2.10.5-1+b1_amd64.deb) ...
+  Selecting previously deselected package libkeyutils1.
+  Unpacking libkeyutils1 (from .../libkeyutils1_1.4-4_amd64.deb) ...
+  Selecting previously deselected package libkrb5support0.
+  Unpacking libkrb5support0 (from .../libkrb5support0_1.9+dfsg-1+b1_amd64.deb) ...
+  Selecting previously deselected package libk5crypto3.
+  Unpacking libk5crypto3 (from .../libk5crypto3_1.9+dfsg-1+b1_amd64.deb) ...
+  Selecting previously deselected package libkrb5-3.
+  Unpacking libkrb5-3 (from .../libkrb5-3_1.9+dfsg-1+b1_amd64.deb) ...
+  Selecting previously deselected package libgssapi-krb5-2.
+  Unpacking libgssapi-krb5-2 (from .../libgssapi-krb5-2_1.9+dfsg-1+b1_amd64.deb) ...
+  Selecting previously deselected package libcups2.
+  Unpacking libcups2 (from .../libcups2_1.4.6-5_amd64.deb) ...
+  Selecting previously deselected package libjpeg62.
+  Unpacking libjpeg62 (from .../libjpeg62_6b1-1_amd64.deb) ...
+  Selecting previously deselected package libjasper1.
+  Unpacking libjasper1 (from .../libjasper1_1.900.1-7+b1_amd64.deb) ...
+  Selecting previously deselected package libtiff4.
+  Unpacking libtiff4 (from .../libtiff4_3.9.5-1_amd64.deb) ...
+  Selecting previously deselected package libgdk-pixbuf2.0-0.
+  Unpacking libgdk-pixbuf2.0-0 (from .../libgdk-pixbuf2.0-0_2.23.3-3_amd64.deb) ...
+  Selecting previously deselected package libdatrie1.
+  Unpacking libdatrie1 (from .../libdatrie1_0.2.4-2_amd64.deb) ...
+  Selecting previously deselected package libthai-data.
+  Unpacking libthai-data (from .../libthai-data_0.1.15-1_all.deb) ...
+  Selecting previously deselected package libthai0.
+  Unpacking libthai0 (from .../libthai0_0.1.15-1_amd64.deb) ...
+  Selecting previously deselected package libxft2.
+  Unpacking libxft2 (from .../libxft2_2.2.0-2_amd64.deb) ...
+  Selecting previously deselected package fontconfig.
+  Unpacking fontconfig (from .../fontconfig_2.8.0-2.2_amd64.deb) ...
+  Selecting previously deselected package libpango1.0-0.
+  Unpacking libpango1.0-0 (from .../libpango1.0-0_1.28.3-6_amd64.deb) ...
+  Selecting previously deselected package libxcomposite1.
+  Unpacking libxcomposite1 (from .../libxcomposite1_1%3a0.4.3-1_amd64.deb) ...
+  Selecting previously deselected package libxfixes3.
+  Unpacking libxfixes3 (from .../libxfixes3_1%3a5.0-2_amd64.deb) ...
+  Selecting previously deselected package libxcursor1.
+  Unpacking libxcursor1 (from .../libxcursor1_1%3a1.1.11-1_amd64.deb) ...
+  Selecting previously deselected package libxdamage1.
+  Unpacking libxdamage1 (from .../libxdamage1_1%3a1.1.3-1_amd64.deb) ...
+  Selecting previously deselected package libxext6.
+  Unpacking libxext6 (from .../libxext6_2%3a1.3.0-1_amd64.deb) ...
+  Selecting previously deselected package libxi6.
+  Unpacking libxi6 (from .../libxi6_2%3a1.4.2-1_amd64.deb) ...
+  Selecting previously deselected package libxinerama1.
+  Unpacking libxinerama1 (from .../libxinerama1_2%3a1.1.1-1_amd64.deb) ...
+  Selecting previously deselected package libxrandr2.
+  Unpacking libxrandr2 (from .../libxrandr2_2%3a1.3.1-1_amd64.deb) ...
+  Selecting previously deselected package libxml2.
+  Unpacking libxml2 (from .../libxml2_2.7.8.dfsg-2+b1_amd64.deb) ...
+  Selecting previously deselected package shared-mime-info.
+  Unpacking shared-mime-info (from .../shared-mime-info_0.90-1_amd64.deb) ...
+  Selecting previously deselected package libgtk2.0-0.
+  Unpacking libgtk2.0-0 (from .../libgtk2.0-0_2.24.4-3_amd64.deb) ...
+  Setting up libpcre3 (8.12-3) ...
+  Setting up libglib2.0-0 (2.28.6-1) ...
+  No schema files found: doing nothing.
+  Setting up libatk1.0-data (2.0.0-1) ...
+  Setting up libatk1.0-0 (2.0.0-1) ...
+  Setting up libexpat1 (2.0.1-7) ...
+  Setting up libfreetype6 (2.4.4-1) ...
+  Setting up ucf (3.0025+nmu2) ...
+  Setting up ttf-dejavu-core (2.33-1) ...
+  Setting up fontconfig-config (2.8.0-2.2) ...
+  Setting up libfontconfig1 (2.8.0-2.2) ...
+  Setting up libpixman-1-0 (0.21.8-1) ...
+  Setting up libpng12-0 (1.2.44-2) ...
+  Setting up libxau6 (1:1.0.6-1) ...
+  Setting up libxdmcp6 (1:1.1.0-1) ...
+  Setting up libxcb1 (1.7-2) ...
+  Setting up libx11-data (2:1.4.3-1) ...
+  Setting up libx11-6 (2:1.4.3-1) ...
+  Setting up libxcb-render0 (1.7-2) ...
+  Setting up libxcb-shm0 (1.7-2) ...
+  Setting up libxrender1 (1:0.9.6-1) ...
+  Setting up libcairo2 (1.10.2-6) ...
+  Setting up libgtk2.0-common (2.24.4-3) ...
+  Setting up libavahi-common-data (0.6.30-3) ...
+  Setting up libavahi-common3 (0.6.30-3) ...
+  Setting up libdbus-1-3 (1.4.8-3) ...
+  Setting up libavahi-client3 (0.6.30-3) ...
+  Setting up libgpg-error0 (1.10-0.3) ...
+  Setting up libgcrypt11 (1.4.6-5) ...
+  Setting up libtasn1-3 (2.9-3) ...
+  Setting up libgnutls26 (2.10.5-1+b1) ...
+  Setting up libkeyutils1 (1.4-4) ...
+  Setting up libkrb5support0 (1.9+dfsg-1+b1) ...
+  Setting up libk5crypto3 (1.9+dfsg-1+b1) ...
+  Setting up libkrb5-3 (1.9+dfsg-1+b1) ...
+  Setting up libgssapi-krb5-2 (1.9+dfsg-1+b1) ...
+  Setting up libcups2 (1.4.6-5) ...
+  Setting up libjpeg62 (6b1-1) ...
+  Setting up libjasper1 (1.900.1-7+b1) ...
+  Setting up libtiff4 (3.9.5-1) ...
+  Setting up libgdk-pixbuf2.0-0 (2.23.3-3) ...
+  Setting up libdatrie1 (0.2.4-2) ...
+  Setting up libthai-data (0.1.15-1) ...
+  Setting up libthai0 (0.1.15-1) ...
+  Setting up libxft2 (2.2.0-2) ...
+  Setting up fontconfig (2.8.0-2.2) ...
+  Cleaning up old fontconfig caches... done.
+  Regenerating fonts cache... done.
+  Setting up libpango1.0-0 (1.28.3-6) ...
+  Setting up libxcomposite1 (1:0.4.3-1) ...
+  Setting up libxfixes3 (1:5.0-2) ...
+  Setting up libxcursor1 (1:1.1.11-1) ...
+  Setting up libxdamage1 (1:1.1.3-1) ...
+  Setting up libxext6 (2:1.3.0-1) ...
+  Setting up libxi6 (2:1.4.2-1) ...
+  Setting up libxinerama1 (2:1.1.1-1) ...
+  Setting up libxrandr2 (2:1.3.1-1) ...
+  Setting up libxml2 (2.7.8.dfsg-2+b1) ...
+  Setting up shared-mime-info (0.90-1) ...
+  Setting up libgtk2.0-0 (2.24.4-3) ...
+  Setting up piuparts-depends-dummy (0.invalid.0) ...
+1m3.0s DEBUG: Command ok: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'apt-get', '-yf', 'install']
+1m3.0s INFO: Installation of ['tmp/piuparts-depends-dummy.deb'] ok
+1m3.0s INFO: Running scripts post_install
+1m3.0s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'apt-get', 'clean']
+1m3.1s DEBUG: Command ok: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'apt-get', 'clean']
+1m3.1s DEBUG: Removing /org/piuparts.debian.org/tmp/tmpC0lgRW/tmp/piuparts-depends-dummy.deb
+1m3.1s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'piuparts-depends-dummy']
+1m3.1s DUMP: 
+  (Reading database ... 8092 files and directories currently installed.)
+  Removing piuparts-depends-dummy ...
+1m3.1s DEBUG: Command ok: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'piuparts-depends-dummy']
+1m3.1s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', '--pending']
+1m3.1s DEBUG: Command ok: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', '--pending']
+1m3.8s INFO: Running scripts pre_install
+1m3.8s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'tmp/scripts/pre_install_exceptions']
+1m3.8s DUMP: 
+  Debug: running script tmp/scripts/pre_install_exceptions
+  Enter new UNIX password: Retype new UNIX password: passwd: password updated successfully
+  yes: standard output: Broken pipe
+  yes: write error
+1m3.8s DEBUG: Command ok: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'tmp/scripts/pre_install_exceptions']
+1m3.8s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'apt-get', '-y', 'install', 'usbview']
+1m5.0s DUMP: 
+  Reading package lists...
+  Building dependency tree...
+  Reading state information...
+  Suggested packages:
+    usbutils
+  The following NEW packages will be installed:
+    usbview
+  0 upgraded, 1 newly installed, 0 to remove and 0 not upgraded.
+  Need to get 212 kB of archives.
+  After this operation, 725 kB of additional disk space will be used.
+  Get:1 http://piatti.debian.org/debian/ sid/main usbview amd64 1.1-1 [212 kB]
+  debconf: delaying package configuration, since apt-utils is not installed
+  Fetched 212 kB in 0s (1227 kB/s)
+  Selecting previously deselected package usbview.
+  (Reading database ... 8092 files and directories currently installed.)
+  Unpacking usbview (from .../usbview_1.1-1_amd64.deb) ...
+  Setting up usbview (1.1-1) ...
+1m5.0s DEBUG: Command ok: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'apt-get', '-y', 'install', 'usbview']
+1m5.0s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'apt-get', 'clean']
+1m5.0s DEBUG: Command ok: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'apt-get', 'clean']
+1m5.0s DEBUG: Starting command: ['lsof', '-w', '+D', '/org/piuparts.debian.org/tmp/tmpC0lgRW']
+1m5.4s DEBUG: Command failed (status=1), but ignoring error: ['lsof', '-w', '+D', '/org/piuparts.debian.org/tmp/tmpC0lgRW']
+1m5.8s ERROR: WARN: Broken symlinks:
+  /etc/fonts/conf.d/30-defoma.conf -> /var/lib/defoma/fontconfig.d/fonts.conf
+1m5.8s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--get-selections', '*']
+1m5.8s DUMP: 
+  apt						install
+  base-files					install
+  base-passwd					install
+  bash						install
+  bsdutils					install
+  coreutils					install
+  dash						install
+  debconf						install
+  debconf-i18n					install
+  debian-archive-keyring				install
+  debianutils					install
+  diffutils					install
+  dpkg						install
+  e2fslibs					install
+  e2fsprogs					install
+  findutils					install
+  fontconfig					install
+  fontconfig-config				install
+  gcc-4.4-base					install
+  gcc-4.5-base					install
+  gcc-4.6-base					install
+  gnupg						install
+  gpgv						install
+  grep						install
+  gzip						install
+  hostname					install
+  initscripts					install
+  insserv						install
+  libacl1						install
+  libatk1.0-0					install
+  libatk1.0-data					install
+  libattr1					install
+  libavahi-client3				install
+  libavahi-common-data				install
+  libavahi-common3				install
+  libblkid1					install
+  libbz2-1.0					install
+  libc-bin					install
+  libc6						install
+  libcairo2					install
+  libcomerr2					install
+  libcups2					install
+  libdatrie1					install
+  libdb5.1					install
+  libdbus-1-3					install
+  libexpat1					install
+  libfontconfig1					install
+  libfreetype6					install
+  libgcc1						install
+  libgcrypt11					install
+  libgdk-pixbuf2.0-0				install
+  libglib2.0-0					install
+  libgnutls26					install
+  libgpg-error0					install
+  libgssapi-krb5-2				install
+  libgtk2.0-0					install
+  libgtk2.0-common				install
+  libjasper1					install
+  libjpeg62					install
+  libk5crypto3					install
+  libkeyutils1					install
+  libkrb5-3					install
+  libkrb5support0					install
+  liblocale-gettext-perl				install
+  liblzma2					install
+  libncurses5					install
+  libpam-modules					install
+  libpam-runtime					install
+  libpam0g					install
+  libpango1.0-0					install
+  libpcre3					install
+  libpixman-1-0					install
+  libpng12-0					install
+  libreadline6					install
+  libselinux1					install
+  libsepol1					install
+  libslang2					install
+  libss2						install
+  libstdc++6					install
+  libtasn1-3					install
+  libtext-charwidth-perl				install
+  libtext-iconv-perl				install
+  libtext-wrapi18n-perl				install
+  libthai-data					install
+  libthai0					install
+  libtiff4					install
+  libusb-0.1-4					install
+  libuuid1					install
+  libx11-6					install
+  libx11-data					install
+  libxau6						install
+  libxcb-render0					install
+  libxcb-shm0					install
+  libxcb1						install
+  libxcomposite1					install
+  libxcursor1					install
+  libxdamage1					install
+  libxdmcp6					install
+  libxext6					install
+  libxfixes3					install
+  libxft2						install
+  libxi6						install
+  libxinerama1					install
+  libxml2						install
+  libxrandr2					install
+  libxrender1					install
+  login						install
+  lsb-base					install
+  mawk						install
+  mount						install
+  ncurses-base					install
+  ncurses-bin					install
+  passwd						install
+  perl-base					install
+  readline-common					install
+  sed						install
+  sensible-utils					install
+  shared-mime-info				install
+  sysv-rc						install
+  sysvinit					install
+  sysvinit-utils					install
+  tar						install
+  ttf-dejavu-core					install
+  tzdata						install
+  ucf						install
+  usbview						install
+  util-linux					install
+  xz-utils					install
+  zlib1g						install
+1m5.8s DEBUG: Command ok: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--get-selections', '*']
+1m5.8s INFO: Running scripts pre_remove
+1m5.8s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'tmp/scripts/pre_remove_exceptions']
+1m5.8s DUMP: 
+  Debug: running script tmp/scripts/pre_remove_exceptions
+1m5.8s DEBUG: Command ok: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'tmp/scripts/pre_remove_exceptions']
+1m5.8s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'libglib2.0-0']
+1m5.8s DUMP: 
+  dpkg: dependency problems prevent removal of libglib2.0-0:
+   libatk1.0-0 depends on libglib2.0-0 (>= 2.16.0).
+   libpango1.0-0 depends on libglib2.0-0 (>= 2.27.0).
+   libgtk2.0-0 depends on libglib2.0-0 (>= 2.28.0).
+   libgdk-pixbuf2.0-0 depends on libglib2.0-0 (>= 2.28.0).
+   usbview depends on libglib2.0-0 (>= 2.16.0).
+   shared-mime-info depends on libglib2.0-0 (>= 2.24.0).
+  dpkg: error processing libglib2.0-0 (--remove):
+   dependency problems - not removing
+  Errors were encountered while processing:
+   libglib2.0-0
+1m5.8s DEBUG: Command failed (status=1), but ignoring error: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'libglib2.0-0']
+1m5.8s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'shared-mime-info']
+1m5.9s DUMP: 
+  dpkg: dependency problems prevent removal of shared-mime-info:
+   libgtk2.0-0 depends on shared-mime-info.
+  dpkg: error processing shared-mime-info (--remove):
+   dependency problems - not removing
+  Errors were encountered while processing:
+   shared-mime-info
+1m5.9s DEBUG: Command failed (status=1), but ignoring error: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'shared-mime-info']
+1m5.9s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'libatk1.0-0']
+1m5.9s DUMP: 
+  dpkg: dependency problems prevent removal of libatk1.0-0:
+   libgtk2.0-0 depends on libatk1.0-0 (>= 1.12.4).
+   usbview depends on libatk1.0-0 (>= 1.20.0).
+  dpkg: error processing libatk1.0-0 (--remove):
+   dependency problems - not removing
+  Errors were encountered while processing:
+   libatk1.0-0
+1m5.9s DEBUG: Command failed (status=1), but ignoring error: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'libatk1.0-0']
+1m5.9s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'libk5crypto3']
+1m5.9s DUMP: 
+  dpkg: dependency problems prevent removal of libk5crypto3:
+   libkrb5-3 depends on libk5crypto3 (>= 1.9+dfsg~beta1).
+   libcups2 depends on libk5crypto3 (>= 1.6.dfsg.2).
+   libgtk2.0-0 depends on libk5crypto3 (>= 1.6.dfsg.2).
+   libgssapi-krb5-2 depends on libk5crypto3 (>= 1.8+dfsg).
+  dpkg: error processing libk5crypto3 (--remove):
+   dependency problems - not removing
+  Errors were encountered while processing:
+   libk5crypto3
+1m5.9s DEBUG: Command failed (status=1), but ignoring error: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'libk5crypto3']
+1m5.9s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'libpng12-0']
+1m5.9s DUMP: 
+  dpkg: dependency problems prevent removal of libpng12-0:
+   libgdk-pixbuf2.0-0 depends on libpng12-0 (>= 1.2.13-4).
+   libcairo2 depends on libpng12-0 (>= 1.2.13-4).
+  dpkg: error processing libpng12-0 (--remove):
+   dependency problems - not removing
+  Errors were encountered while processing:
+   libpng12-0
+1m5.9s DEBUG: Command failed (status=1), but ignoring error: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'libpng12-0']
+1m5.9s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'libxrender1']
+1m6.0s DUMP: 
+  dpkg: dependency problems prevent removal of libxrender1:
+   libxcursor1 depends on libxrender1.
+   libxft2 depends on libxrender1.
+   libpango1.0-0 depends on libxrender1.
+   libxrandr2 depends on libxrender1.
+   libgtk2.0-0 depends on libxrender1.
+   libcairo2 depends on libxrender1.
+  dpkg: error processing libxrender1 (--remove):
+   dependency problems - not removing
+  Errors were encountered while processing:
+   libxrender1
+1m6.0s DEBUG: Command failed (status=1), but ignoring error: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'libxrender1']
+1m6.0s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'libpixman-1-0']
+1m6.0s DUMP: 
+  dpkg: dependency problems prevent removal of libpixman-1-0:
+   libcairo2 depends on libpixman-1-0 (>= 0.18.0).
+  dpkg: error processing libpixman-1-0 (--remove):
+   dependency problems - not removing
+  Errors were encountered while processing:
+   libpixman-1-0
+1m6.0s DEBUG: Command failed (status=1), but ignoring error: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'libpixman-1-0']
+1m6.0s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'libavahi-common3']
+1m6.0s DUMP: 
+  dpkg: dependency problems prevent removal of libavahi-common3:
+   libavahi-client3 depends on libavahi-common3 (>= 0.6.22).
+   libcups2 depends on libavahi-common3 (>= 0.6.16).
+  dpkg: error processing libavahi-common3 (--remove):
+   dependency problems - not removing
+  Errors were encountered while processing:
+   libavahi-common3
+1m6.0s DEBUG: Command failed (status=1), but ignoring error: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'libavahi-common3']
+1m6.0s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'libdbus-1-3']
+1m6.0s DUMP: 
+  dpkg: dependency problems prevent removal of libdbus-1-3:
+   libavahi-client3 depends on libdbus-1-3 (>= 1.1.1).
+  dpkg: error processing libdbus-1-3 (--remove):
+   dependency problems - not removing
+  Errors were encountered while processing:
+   libdbus-1-3
+1m6.0s DEBUG: Command failed (status=1), but ignoring error: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'libdbus-1-3']
+1m6.0s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'libthai-data']
+1m6.0s DUMP: 
+  dpkg: dependency problems prevent removal of libthai-data:
+   libthai0 depends on libthai-data (>= 0.1.10).
+  dpkg: error processing libthai-data (--remove):
+   dependency problems - not removing
+  Errors were encountered while processing:
+   libthai-data
+1m6.0s DEBUG: Command failed (status=1), but ignoring error: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'libthai-data']
+1m6.0s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'libavahi-client3']
+1m6.1s DUMP: 
+  dpkg: dependency problems prevent removal of libavahi-client3:
+   libcups2 depends on libavahi-client3 (>= 0.6.16).
+  dpkg: error processing libavahi-client3 (--remove):
+   dependency problems - not removing
+  Errors were encountered while processing:
+   libavahi-client3
+1m6.1s DEBUG: Command failed (status=1), but ignoring error: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'libavahi-client3']
+1m6.1s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'libtiff4']
+1m6.1s DUMP: 
+  dpkg: dependency problems prevent removal of libtiff4:
+   libgdk-pixbuf2.0-0 depends on libtiff4.
+  dpkg: error processing libtiff4 (--remove):
+   dependency problems - not removing
+  Errors were encountered while processing:
+   libtiff4
+1m6.1s DEBUG: Command failed (status=1), but ignoring error: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'libtiff4']
+1m6.1s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'libcups2']
+1m6.1s DUMP: 
+  dpkg: dependency problems prevent removal of libcups2:
+   libgtk2.0-0 depends on libcups2 (>= 1.4.0).
+  dpkg: error processing libcups2 (--remove):
+   dependency problems - not removing
+  Errors were encountered while processing:
+   libcups2
+1m6.1s DEBUG: Command failed (status=1), but ignoring error: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'libcups2']
+1m6.1s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'libxcb-shm0']
+1m6.1s DUMP: 
+  dpkg: dependency problems prevent removal of libxcb-shm0:
+   libcairo2 depends on libxcb-shm0.
+  dpkg: error processing libxcb-shm0 (--remove):
+   dependency problems - not removing
+  Errors were encountered while processing:
+   libxcb-shm0
+1m6.1s DEBUG: Command failed (status=1), but ignoring error: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'libxcb-shm0']
+1m6.1s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'fontconfig']
+1m6.1s DUMP: 
+  dpkg: dependency problems prevent removal of fontconfig:
+   libpango1.0-0 depends on fontconfig (>= 2.1.91).
+  dpkg: error processing fontconfig (--remove):
+   dependency problems - not removing
+  Errors were encountered while processing:
+   fontconfig
+1m6.1s DEBUG: Command failed (status=1), but ignoring error: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'fontconfig']
+1m6.1s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'libkrb5support0']
+1m6.2s DUMP: 
+  dpkg: dependency problems prevent removal of libkrb5support0:
+   libkrb5-3 depends on libkrb5support0 (= 1.9+dfsg-1+b1).
+   libk5crypto3 depends on libkrb5support0 (>= 1.7dfsg~beta2).
+   libgssapi-krb5-2 depends on libkrb5support0 (>= 1.7dfsg~beta2).
+  dpkg: error processing libkrb5support0 (--remove):
+   dependency problems - not removing
+  Errors were encountered while processing:
+   libkrb5support0
+1m6.2s DEBUG: Command failed (status=1), but ignoring error: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'libkrb5support0']
+1m6.2s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'libx11-data']
+1m6.2s DUMP: 
+  dpkg: dependency problems prevent removal of libx11-data:
+   libx11-6 depends on libx11-data.
+  dpkg: error processing libx11-data (--remove):
+   dependency problems - not removing
+  Errors were encountered while processing:
+   libx11-data
+1m6.2s DEBUG: Command failed (status=1), but ignoring error: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'libx11-data']
+1m6.2s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'libxrandr2']
+1m6.2s DUMP: 
+  dpkg: dependency problems prevent removal of libxrandr2:
+   libgtk2.0-0 depends on libxrandr2 (>= 2:1.2.99.3).
+  dpkg: error processing libxrandr2 (--remove):
+   dependency problems - not removing
+  Errors were encountered while processing:
+   libxrandr2
+1m6.2s DEBUG: Command failed (status=1), but ignoring error: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'libxrandr2']
+1m6.2s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'libxcb1']
+1m6.2s DUMP: 
+  dpkg: dependency problems prevent removal of libxcb1:
+   libx11-6 depends on libxcb1 (>= 1.2).
+   libxcb-render0 depends on libxcb1.
+   libcairo2 depends on libxcb1 (>= 1.2).
+   libxcb-shm0 depends on libxcb1.
+  dpkg: error processing libxcb1 (--remove):
+   dependency problems - not removing
+  Errors were encountered while processing:
+   libxcb1
+1m6.2s DEBUG: Command failed (status=1), but ignoring error: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'libxcb1']
+1m6.2s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'libgdk-pixbuf2.0-0']
+1m6.2s DUMP: 
+  dpkg: dependency problems prevent removal of libgdk-pixbuf2.0-0:
+   libgtk2.0-0 depends on libgdk-pixbuf2.0-0 (>= 2.22.0).
+  dpkg: error processing libgdk-pixbuf2.0-0 (--remove):
+   dependency problems - not removing
+  Errors were encountered while processing:
+   libgdk-pixbuf2.0-0
+1m6.2s DEBUG: Command failed (status=1), but ignoring error: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'libgdk-pixbuf2.0-0']
+1m6.2s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'libxdamage1']
+1m6.3s DUMP: 
+  dpkg: dependency problems prevent removal of libxdamage1:
+   libgtk2.0-0 depends on libxdamage1 (>= 1:1.1).
+  dpkg: error processing libxdamage1 (--remove):
+   dependency problems - not removing
+  Errors were encountered while processing:
+   libxdamage1
+1m6.3s DEBUG: Command failed (status=1), but ignoring error: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'libxdamage1']
+1m6.3s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'libxinerama1']
+1m6.3s DUMP: 
+  dpkg: dependency problems prevent removal of libxinerama1:
+   libgtk2.0-0 depends on libxinerama1.
+  dpkg: error processing libxinerama1 (--remove):
+   dependency problems - not removing
+  Errors were encountered while processing:
+   libxinerama1
+1m6.3s DEBUG: Command failed (status=1), but ignoring error: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'libxinerama1']
+1m6.3s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'libgcrypt11']
+1m6.3s DUMP: 
+  dpkg: dependency problems prevent removal of libgcrypt11:
+   libgnutls26 depends on libgcrypt11 (>= 1.4.6).
+   libcups2 depends on libgcrypt11 (>= 1.4.6).
+   libgtk2.0-0 depends on libgcrypt11 (>= 1.4.6).
+  dpkg: error processing libgcrypt11 (--remove):
+   dependency problems - not removing
+  Errors were encountered while processing:
+   libgcrypt11
+1m6.3s DEBUG: Command failed (status=1), but ignoring error: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'libgcrypt11']
+1m6.3s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'libjasper1']
+1m6.3s DUMP: 
+  dpkg: dependency problems prevent removal of libjasper1:
+   libgdk-pixbuf2.0-0 depends on libjasper1 (>= 1.900.1).
+  dpkg: error processing libjasper1 (--remove):
+   dependency problems - not removing
+  Errors were encountered while processing:
+   libjasper1
+1m6.3s DEBUG: Command failed (status=1), but ignoring error: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'libjasper1']
+1m6.3s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'libkrb5-3']
+1m6.3s DUMP: 
+  dpkg: dependency problems prevent removal of libkrb5-3:
+   libcups2 depends on libkrb5-3 (>= 1.6.dfsg.2).
+   libgtk2.0-0 depends on libkrb5-3 (>= 1.6.dfsg.2).
+   libgssapi-krb5-2 depends on libkrb5-3 (= 1.9+dfsg-1+b1).
+  dpkg: error processing libkrb5-3 (--remove):
+   dependency problems - not removing
+  Errors were encountered while processing:
+   libkrb5-3
+1m6.3s DEBUG: Command failed (status=1), but ignoring error: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'libkrb5-3']
+1m6.3s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'libcairo2']
+1m6.4s DUMP: 
+  dpkg: dependency problems prevent removal of libcairo2:
+   libpango1.0-0 depends on libcairo2 (>= 1.8.10-3).
+   libgtk2.0-0 depends on libcairo2 (>= 1.6.4-6.1).
+   usbview depends on libcairo2 (>= 1.2.4).
+  dpkg: error processing libcairo2 (--remove):
+   dependency problems - not removing
+  Errors were encountered while processing:
+   libcairo2
+1m6.4s DEBUG: Command failed (status=1), but ignoring error: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'libcairo2']
+1m6.4s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'libxml2']
+1m6.4s DUMP: 
+  dpkg: dependency problems prevent removal of libxml2:
+   shared-mime-info depends on libxml2 (>= 2.7.4).
+  dpkg: error processing libxml2 (--remove):
+   dependency problems - not removing
+  Errors were encountered while processing:
+   libxml2
+1m6.4s DEBUG: Command failed (status=1), but ignoring error: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'libxml2']
+1m6.4s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'libxi6']
+1m6.4s DUMP: 
+  dpkg: dependency problems prevent removal of libxi6:
+   libgtk2.0-0 depends on libxi6.
+  dpkg: error processing libxi6 (--remove):
+   dependency problems - not removing
+  Errors were encountered while processing:
+   libxi6
+1m6.4s DEBUG: Command failed (status=1), but ignoring error: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'libxi6']
+1m6.4s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'libxau6']
+1m6.4s DUMP: 
+  dpkg: dependency problems prevent removal of libxau6:
+   libxcb1 depends on libxau6.
+  dpkg: error processing libxau6 (--remove):
+   dependency problems - not removing
+  Errors were encountered while processing:
+   libxau6
+1m6.4s DEBUG: Command failed (status=1), but ignoring error: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'libxau6']
+1m6.4s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'libxext6']
+1m6.4s DUMP: 
+  dpkg: dependency problems prevent removal of libxext6:
+   libxi6 depends on libxext6.
+   libxrandr2 depends on libxext6 (>= 0).
+   libgtk2.0-0 depends on libxext6.
+   libxinerama1 depends on libxext6.
+  dpkg: error processing libxext6 (--remove):
+   dependency problems - not removing
+  Errors were encountered while processing:
+   libxext6
+1m6.4s DEBUG: Command failed (status=1), but ignoring error: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'libxext6']
+1m6.4s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'libkeyutils1']
+1m6.5s DUMP: 
+  dpkg: dependency problems prevent removal of libkeyutils1:
+   libkrb5-3 depends on libkeyutils1.
+   libkrb5support0 depends on libkeyutils1.
+   libk5crypto3 depends on libkeyutils1.
+   libgssapi-krb5-2 depends on libkeyutils1.
+  dpkg: error processing libkeyutils1 (--remove):
+   dependency problems - not removing
+  Errors were encountered while processing:
+   libkeyutils1
+1m6.5s DEBUG: Command failed (status=1), but ignoring error: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'libkeyutils1']
+1m6.5s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'libxcursor1']
+1m6.5s DUMP: 
+  dpkg: dependency problems prevent removal of libxcursor1:
+   libgtk2.0-0 depends on libxcursor1 (>> 1.1.2).
+  dpkg: error processing libxcursor1 (--remove):
+   dependency problems - not removing
+  Errors were encountered while processing:
+   libxcursor1
+1m6.5s DEBUG: Command failed (status=1), but ignoring error: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'libxcursor1']
+1m6.5s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'libx11-6']
+1m6.5s DUMP: 
+  dpkg: dependency problems prevent removal of libx11-6:
+   libxcursor1 depends on libx11-6.
+   libxft2 depends on libx11-6.
+   libxdamage1 depends on libx11-6.
+   libxfixes3 depends on libx11-6.
+   libxi6 depends on libx11-6 (>= 2:1.2.99.901).
+   libpango1.0-0 depends on libx11-6.
+   libxcomposite1 depends on libx11-6.
+   libxrandr2 depends on libx11-6 (>= 0).
+   libgtk2.0-0 depends on libx11-6.
+   libxrender1 depends on libx11-6.
+   libxext6 depends on libx11-6.
+   libgdk-pixbuf2.0-0 depends on libx11-6.
+   libxinerama1 depends on libx11-6.
+   libcairo2 depends on libx11-6.
+  dpkg: error processing libx11-6 (--remove):
+   dependency problems - not removing
+  Errors were encountered while processing:
+   libx11-6
+1m6.5s DEBUG: Command failed (status=1), but ignoring error: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'libx11-6']
+1m6.5s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'libatk1.0-data']
+1m6.5s DUMP: 
+  dpkg: dependency problems prevent removal of libatk1.0-data:
+   libatk1.0-0 depends on libatk1.0-data (= 2.0.0-1).
+  dpkg: error processing libatk1.0-data (--remove):
+   dependency problems - not removing
+  Errors were encountered while processing:
+   libatk1.0-data
+1m6.5s DEBUG: Command failed (status=1), but ignoring error: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'libatk1.0-data']
+1m6.5s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'libxfixes3']
+1m6.6s DUMP: 
+  dpkg: dependency problems prevent removal of libxfixes3:
+   libxcursor1 depends on libxfixes3 (>= 1:4.0.1).
+   libxdamage1 depends on libxfixes3 (>= 1:4.0.1).
+   libgtk2.0-0 depends on libxfixes3 (>= 1:4.0.1).
+  dpkg: error processing libxfixes3 (--remove):
+   dependency problems - not removing
+  Errors were encountered while processing:
+   libxfixes3
+1m6.6s DEBUG: Command failed (status=1), but ignoring error: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'libxfixes3']
+1m6.6s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'libjpeg62']
+1m6.6s DUMP: 
+  dpkg: dependency problems prevent removal of libjpeg62:
+   libjasper1 depends on libjpeg62 (>= 6b1).
+   libtiff4 depends on libjpeg62 (>= 6b1).
+   libgdk-pixbuf2.0-0 depends on libjpeg62 (>= 6b1).
+  dpkg: error processing libjpeg62 (--remove):
+   dependency problems - not removing
+  Errors were encountered while processing:
+   libjpeg62
+1m6.6s DEBUG: Command failed (status=1), but ignoring error: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'libjpeg62']
+1m6.6s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'libxcomposite1']
+1m6.6s DUMP: 
+  dpkg: dependency problems prevent removal of libxcomposite1:
+   libgtk2.0-0 depends on libxcomposite1 (>= 1:0.3-1).
+  dpkg: error processing libxcomposite1 (--remove):
+   dependency problems - not removing
+  Errors were encountered while processing:
+   libxcomposite1
+1m6.6s DEBUG: Command failed (status=1), but ignoring error: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'libxcomposite1']
+1m6.6s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'libpcre3']
+1m6.6s DUMP: 
+  dpkg: dependency problems prevent removal of libpcre3:
+   libglib2.0-0 depends on libpcre3 (>= 8.10).
+  dpkg: error processing libpcre3 (--remove):
+   dependency problems - not removing
+  Errors were encountered while processing:
+   libpcre3
+1m6.6s DEBUG: Command failed (status=1), but ignoring error: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'libpcre3']
+1m6.6s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'libavahi-common-data']
+1m6.6s DUMP: 
+  dpkg: dependency problems prevent removal of libavahi-common-data:
+   libavahi-common3 depends on libavahi-common-data.
+  dpkg: error processing libavahi-common-data (--remove):
+   dependency problems - not removing
+  Errors were encountered while processing:
+   libavahi-common-data
+1m6.6s DEBUG: Command failed (status=1), but ignoring error: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'libavahi-common-data']
+1m6.6s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'libgtk2.0-common']
+1m6.7s DUMP: 
+  dpkg: dependency problems prevent removal of libgtk2.0-common:
+   libgtk2.0-0 depends on libgtk2.0-common.
+  dpkg: error processing libgtk2.0-common (--remove):
+   dependency problems - not removing
+  Errors were encountered while processing:
+   libgtk2.0-common
+1m6.7s DEBUG: Command failed (status=1), but ignoring error: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'libgtk2.0-common']
+1m6.7s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'libgtk2.0-0']
+1m6.7s DUMP: 
+  dpkg: dependency problems prevent removal of libgtk2.0-0:
+   usbview depends on libgtk2.0-0 (>= 2.8.0).
+  dpkg: error processing libgtk2.0-0 (--remove):
+   dependency problems - not removing
+  Errors were encountered while processing:
+   libgtk2.0-0
+1m6.7s DEBUG: Command failed (status=1), but ignoring error: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'libgtk2.0-0']
+1m6.7s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'libgpg-error0']
+1m6.7s DUMP: 
+  dpkg: dependency problems prevent removal of libgpg-error0:
+   libgcrypt11 depends on libgpg-error0 (>= 1.10).
+  dpkg: error processing libgpg-error0 (--remove):
+   dependency problems - not removing
+  Errors were encountered while processing:
+   libgpg-error0
+1m6.7s DEBUG: Command failed (status=1), but ignoring error: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'libgpg-error0']
+1m6.7s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'libgssapi-krb5-2']
+1m6.7s DUMP: 
+  dpkg: dependency problems prevent removal of libgssapi-krb5-2:
+   libcups2 depends on libgssapi-krb5-2 (>= 1.7+dfsg).
+   libgtk2.0-0 depends on libgssapi-krb5-2 (>= 1.6.dfsg.2).
+  dpkg: error processing libgssapi-krb5-2 (--remove):
+   dependency problems - not removing
+  Errors were encountered while processing:
+   libgssapi-krb5-2
+1m6.7s DEBUG: Command failed (status=1), but ignoring error: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'libgssapi-krb5-2']
+1m6.7s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'libdatrie1']
+1m6.8s DUMP: 
+  dpkg: dependency problems prevent removal of libdatrie1:
+   libthai0 depends on libdatrie1 (>= 0.2.0).
+  dpkg: error processing libdatrie1 (--remove):
+   dependency problems - not removing
+  Errors were encountered while processing:
+   libdatrie1
+1m6.8s DEBUG: Command failed (status=1), but ignoring error: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'libdatrie1']
+1m6.8s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'ttf-dejavu-core']
+1m6.8s DUMP: 
+  dpkg: dependency problems prevent removal of ttf-dejavu-core:
+   fontconfig-config depends on ttf-dejavu-core | ttf-bitstream-vera | ttf-freefont | gsfonts-x11; however:
+    Package ttf-dejavu-core is to be removed.
+    Package ttf-bitstream-vera is not installed.
+    Package ttf-freefont is not installed.
+    Package gsfonts-x11 is not installed.
+  dpkg: error processing ttf-dejavu-core (--remove):
+   dependency problems - not removing
+  Errors were encountered while processing:
+   ttf-dejavu-core
+1m6.8s DEBUG: Command failed (status=1), but ignoring error: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'ttf-dejavu-core']
+1m6.8s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'libxft2']
+1m6.8s DUMP: 
+  dpkg: dependency problems prevent removal of libxft2:
+   libpango1.0-0 depends on libxft2 (>> 2.1.1).
+  dpkg: error processing libxft2 (--remove):
+   dependency problems - not removing
+  Errors were encountered while processing:
+   libxft2
+1m6.8s DEBUG: Command failed (status=1), but ignoring error: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'libxft2']
+1m6.8s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'libfreetype6']
+1m6.8s DUMP: 
+  dpkg: dependency problems prevent removal of libfreetype6:
+   libxft2 depends on libfreetype6 (>= 2.2.1).
+   libpango1.0-0 depends on libfreetype6 (>= 2.2.1).
+   libgtk2.0-0 depends on libfreetype6 (>= 2.2.1).
+   libfontconfig1 depends on libfreetype6 (>= 2.2.1).
+   fontconfig depends on libfreetype6 (>= 2.2.1).
+   libcairo2 depends on libfreetype6 (>= 2.3.5).
+   usbview depends on libfreetype6 (>= 2.2.1).
+  dpkg: error processing libfreetype6 (--remove):
+   dependency problems - not removing
+  Errors were encountered while processing:
+   libfreetype6
+1m6.8s DEBUG: Command failed (status=1), but ignoring error: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'libfreetype6']
+1m6.8s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'ucf']
+1m6.8s DUMP: 
+  dpkg: dependency problems prevent removal of ucf:
+   fontconfig-config depends on ucf (>= 0.29).
+  dpkg: error processing ucf (--remove):
+   dependency problems - not removing
+  Errors were encountered while processing:
+   ucf
+1m6.8s DEBUG: Command failed (status=1), but ignoring error: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'ucf']
+1m6.8s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'libthai0']
+1m6.9s DUMP: 
+  dpkg: dependency problems prevent removal of libthai0:
+   libpango1.0-0 depends on libthai0 (>= 0.1.12).
+  dpkg: error processing libthai0 (--remove):
+   dependency problems - not removing
+  Errors were encountered while processing:
+   libthai0
+1m6.9s DEBUG: Command failed (status=1), but ignoring error: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'libthai0']
+1m6.9s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'fontconfig-config']
+1m6.9s DUMP: 
+  dpkg: dependency problems prevent removal of fontconfig-config:
+   libfontconfig1 depends on fontconfig-config (= 2.8.0-2.2).
+   fontconfig depends on fontconfig-config.
+  dpkg: error processing fontconfig-config (--remove):
+   dependency problems - not removing
+  Errors were encountered while processing:
+   fontconfig-config
+1m6.9s DEBUG: Command failed (status=1), but ignoring error: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'fontconfig-config']
+1m6.9s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'libxcb-render0']
+1m6.9s DUMP: 
+  dpkg: dependency problems prevent removal of libxcb-render0:
+   libcairo2 depends on libxcb-render0.
+  dpkg: error processing libxcb-render0 (--remove):
+   dependency problems - not removing
+  Errors were encountered while processing:
+   libxcb-render0
+1m6.9s DEBUG: Command failed (status=1), but ignoring error: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'libxcb-render0']
+1m6.9s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'libgnutls26']
+1m6.9s DUMP: 
+  dpkg: dependency problems prevent removal of libgnutls26:
+   libcups2 depends on libgnutls26 (>= 2.9.11-0).
+   libgtk2.0-0 depends on libgnutls26 (>= 2.9.11-0).
+  dpkg: error processing libgnutls26 (--remove):
+   dependency problems - not removing
+  Errors were encountered while processing:
+   libgnutls26
+1m6.9s DEBUG: Command failed (status=1), but ignoring error: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'libgnutls26']
+1m6.9s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'libpango1.0-0']
+1m6.9s DUMP: 
+  dpkg: dependency problems prevent removal of libpango1.0-0:
+   libgtk2.0-0 depends on libpango1.0-0 (>= 1.28.3).
+   usbview depends on libpango1.0-0 (>= 1.14.0).
+  dpkg: error processing libpango1.0-0 (--remove):
+   dependency problems - not removing
+  Errors were encountered while processing:
+   libpango1.0-0
+1m6.9s DEBUG: Command failed (status=1), but ignoring error: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'libpango1.0-0']
+1m6.9s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'libtasn1-3']
+1m6.9s DUMP: 
+  dpkg: dependency problems prevent removal of libtasn1-3:
+   libgnutls26 depends on libtasn1-3 (>= 1.6-0).
+  dpkg: error processing libtasn1-3 (--remove):
+   dependency problems - not removing
+  Errors were encountered while processing:
+   libtasn1-3
+1m6.9s DEBUG: Command failed (status=1), but ignoring error: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'libtasn1-3']
+1m7.0s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'libexpat1']
+1m7.0s DUMP: 
+  dpkg: dependency problems prevent removal of libexpat1:
+   libfontconfig1 depends on libexpat1 (>= 1.95.8).
+   fontconfig depends on libexpat1 (>= 1.95.8).
+  dpkg: error processing libexpat1 (--remove):
+   dependency problems - not removing
+  Errors were encountered while processing:
+   libexpat1
+1m7.0s DEBUG: Command failed (status=1), but ignoring error: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'libexpat1']
+1m7.0s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'libxdmcp6']
+1m7.0s DUMP: 
+  dpkg: dependency problems prevent removal of libxdmcp6:
+   libxcb1 depends on libxdmcp6.
+  dpkg: error processing libxdmcp6 (--remove):
+   dependency problems - not removing
+  Errors were encountered while processing:
+   libxdmcp6
+1m7.0s DEBUG: Command failed (status=1), but ignoring error: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'libxdmcp6']
+1m7.0s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'libfontconfig1']
+1m7.0s DUMP: 
+  dpkg: dependency problems prevent removal of libfontconfig1:
+   libxft2 depends on libfontconfig1 (>= 2.8.0).
+   libpango1.0-0 depends on libfontconfig1 (>= 2.8.0).
+   libgtk2.0-0 depends on libfontconfig1 (>= 2.8.0).
+   fontconfig depends on libfontconfig1 (>= 2.8.0).
+   libcairo2 depends on libfontconfig1 (>= 2.8.0).
+   usbview depends on libfontconfig1 (>= 2.4.0).
+  dpkg: error processing libfontconfig1 (--remove):
+   dependency problems - not removing
+  Errors were encountered while processing:
+   libfontconfig1
+1m7.0s DEBUG: Command failed (status=1), but ignoring error: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'libfontconfig1']
+1m7.0s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'usbview']
+1m7.1s DUMP: 
+  (Reading database ... 8102 files and directories currently installed.)
+  Removing usbview ...
+1m7.1s DEBUG: Command ok: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', 'usbview']
+1m7.1s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', '--pending']
+1m8.7s DUMP: 
+  (Reading database ... 8092 files and directories currently installed.)
+  Removing libgtk2.0-0 ...
+  Removing libxrandr2 ...
+  Removing libxcomposite1 ...
+  Removing libcups2 ...
+  Removing libpango1.0-0 ...
+  Removing libxi6 ...
+  Removing libgtk2.0-common ...
+  Removing libxdamage1 ...
+  Removing libxft2 ...
+  Removing libatk1.0-0 ...
+  Removing libgnutls26 ...
+  Removing libavahi-client3 ...
+  Removing libatk1.0-data ...
+  Removing libxcursor1 ...
+  Removing shared-mime-info ...
+  Removing libxml2 ...
+  Removing libdbus-1-3 ...
+  Removing libcairo2 ...
+  Removing libgcrypt11 ...
+  Removing libxinerama1 ...
+  Removing libtasn1-3 ...
+  Removing fontconfig ...
+  Removing libgssapi-krb5-2 ...
+  Removing libgpg-error0 ...
+  Removing libgdk-pixbuf2.0-0 ...
+  Removing libfontconfig1 ...
+  Removing libxext6 ...
+  Removing libxrender1 ...
+  Removing libthai0 ...
+  Removing libthai-data ...
+  Removing libexpat1 ...
+  Removing libxcb-render0 ...
+  Removing libtiff4 ...
+  Removing libxfixes3 ...
+  Removing libdatrie1 ...
+  Removing libx11-6 ...
+  Removing libjasper1 ...
+  Removing libavahi-common3 ...
+  Removing fontconfig-config ...
+  Removing libx11-data ...
+  Removing libpng12-0 ...
+  Removing libpixman-1-0 ...
+  Removing libglib2.0-0 ...
+  Removing libkrb5-3 ...
+  Removing libfreetype6 ...
+  Removing libxcb-shm0 ...
+  Removing libjpeg62 ...
+  Removing ucf ...
+  Removing libk5crypto3 ...
+  Removing libxcb1 ...
+  Removing libkrb5support0 ...
+  Removing libavahi-common-data ...
+  Removing libpcre3 ...
+  Removing ttf-dejavu-core ...
+  Removing libxau6 ...
+  Removing libxdmcp6 ...
+  Removing libkeyutils1 ...
+1m8.7s DEBUG: Command ok: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', '--pending']
+1m8.7s INFO: Running scripts post_remove
+1m8.7s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'libglib2.0-0']
+1m8.8s DUMP: 
+  (Reading database ... 6653 files and directories currently installed.)
+  Removing libglib2.0-0 ...
+  Purging configuration files for libglib2.0-0 ...
+1m8.8s DEBUG: Command ok: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'libglib2.0-0']
+1m8.8s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'shared-mime-info']
+1m8.8s DUMP: 
+  (Reading database ... 6652 files and directories currently installed.)
+  Removing shared-mime-info ...
+  Purging configuration files for shared-mime-info ...
+1m8.8s DEBUG: Command ok: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'shared-mime-info']
+1m8.8s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'libatk1.0-0']
+1m8.9s DUMP: 
+  (Reading database ... 6651 files and directories currently installed.)
+  Removing libatk1.0-0 ...
+  Purging configuration files for libatk1.0-0 ...
+1m8.9s DEBUG: Command ok: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'libatk1.0-0']
+1m8.9s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'libk5crypto3']
+1m8.9s DUMP: 
+  (Reading database ... 6651 files and directories currently installed.)
+  Removing libk5crypto3 ...
+  Purging configuration files for libk5crypto3 ...
+1m8.9s DEBUG: Command ok: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'libk5crypto3']
+1m8.9s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'libpng12-0']
+1m9.0s DUMP: 
+  (Reading database ... 6651 files and directories currently installed.)
+  Removing libpng12-0 ...
+  Purging configuration files for libpng12-0 ...
+1m9.0s DEBUG: Command ok: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'libpng12-0']
+1m9.0s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'libxrender1']
+1m9.0s DUMP: 
+  (Reading database ... 6651 files and directories currently installed.)
+  Removing libxrender1 ...
+  Purging configuration files for libxrender1 ...
+1m9.0s DEBUG: Command ok: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'libxrender1']
+1m9.0s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'libpixman-1-0']
+1m9.0s DUMP: 
+  (Reading database ... 6651 files and directories currently installed.)
+  Removing libpixman-1-0 ...
+  Purging configuration files for libpixman-1-0 ...
+1m9.0s DEBUG: Command ok: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'libpixman-1-0']
+1m9.0s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'libavahi-common3']
+1m9.1s DUMP: 
+  (Reading database ... 6651 files and directories currently installed.)
+  Removing libavahi-common3 ...
+  Purging configuration files for libavahi-common3 ...
+1m9.1s DEBUG: Command ok: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'libavahi-common3']
+1m9.1s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'libdbus-1-3']
+1m9.1s DUMP: 
+  (Reading database ... 6651 files and directories currently installed.)
+  Removing libdbus-1-3 ...
+  Purging configuration files for libdbus-1-3 ...
+1m9.1s DEBUG: Command ok: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'libdbus-1-3']
+1m9.1s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'libthai-data']
+1m9.1s DUMP: 
+  dpkg: warning: ignoring request to remove libthai-data which isn't installed.
+1m9.1s DEBUG: Command ok: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'libthai-data']
+1m9.1s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'libavahi-client3']
+1m9.2s DUMP: 
+  (Reading database ... 6651 files and directories currently installed.)
+  Removing libavahi-client3 ...
+  Purging configuration files for libavahi-client3 ...
+1m9.2s DEBUG: Command ok: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'libavahi-client3']
+1m9.2s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'libtiff4']
+1m9.2s DUMP: 
+  (Reading database ... 6651 files and directories currently installed.)
+  Removing libtiff4 ...
+  Purging configuration files for libtiff4 ...
+1m9.2s DEBUG: Command ok: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'libtiff4']
+1m9.2s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'libcups2']
+1m9.3s DUMP: 
+  (Reading database ... 6651 files and directories currently installed.)
+  Removing libcups2 ...
+  Purging configuration files for libcups2 ...
+1m9.3s DEBUG: Command ok: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'libcups2']
+1m9.3s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'libxcb-shm0']
+1m9.3s DUMP: 
+  (Reading database ... 6651 files and directories currently installed.)
+  Removing libxcb-shm0 ...
+  Purging configuration files for libxcb-shm0 ...
+1m9.3s DEBUG: Command ok: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'libxcb-shm0']
+1m9.3s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'fontconfig']
+1m9.3s DUMP: 
+  (Reading database ... 6651 files and directories currently installed.)
+  Removing fontconfig ...
+  Purging configuration files for fontconfig ...
+1m9.3s DEBUG: Command ok: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'fontconfig']
+1m9.3s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'libkrb5support0']
+1m9.4s DUMP: 
+  (Reading database ... 6651 files and directories currently installed.)
+  Removing libkrb5support0 ...
+  Purging configuration files for libkrb5support0 ...
+1m9.4s DEBUG: Command ok: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'libkrb5support0']
+1m9.4s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'libx11-data']
+1m9.4s DUMP: 
+  dpkg: warning: ignoring request to remove libx11-data which isn't installed.
+1m9.4s DEBUG: Command ok: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'libx11-data']
+1m9.4s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'libxrandr2']
+1m9.4s DUMP: 
+  (Reading database ... 6651 files and directories currently installed.)
+  Removing libxrandr2 ...
+  Purging configuration files for libxrandr2 ...
+1m9.4s DEBUG: Command ok: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'libxrandr2']
+1m9.4s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'libxcb1']
+1m9.5s DUMP: 
+  (Reading database ... 6651 files and directories currently installed.)
+  Removing libxcb1 ...
+  Purging configuration files for libxcb1 ...
+1m9.5s DEBUG: Command ok: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'libxcb1']
+1m9.5s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'libgdk-pixbuf2.0-0']
+1m9.5s DUMP: 
+  (Reading database ... 6651 files and directories currently installed.)
+  Removing libgdk-pixbuf2.0-0 ...
+  Purging configuration files for libgdk-pixbuf2.0-0 ...
+1m9.5s DEBUG: Command ok: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'libgdk-pixbuf2.0-0']
+1m9.5s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'libxdamage1']
+1m9.6s DUMP: 
+  (Reading database ... 6649 files and directories currently installed.)
+  Removing libxdamage1 ...
+  Purging configuration files for libxdamage1 ...
+1m9.6s DEBUG: Command ok: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'libxdamage1']
+1m9.6s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'libxinerama1']
+1m9.7s DUMP: 
+  (Reading database ... 6649 files and directories currently installed.)
+  Removing libxinerama1 ...
+  Purging configuration files for libxinerama1 ...
+1m9.7s DEBUG: Command ok: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'libxinerama1']
+1m9.7s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'libgcrypt11']
+1m9.7s DUMP: 
+  (Reading database ... 6649 files and directories currently installed.)
+  Removing libgcrypt11 ...
+  Purging configuration files for libgcrypt11 ...
+1m9.7s DEBUG: Command ok: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'libgcrypt11']
+1m9.7s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'libjasper1']
+1m9.7s DUMP: 
+  (Reading database ... 6649 files and directories currently installed.)
+  Removing libjasper1 ...
+  Purging configuration files for libjasper1 ...
+1m9.7s DEBUG: Command ok: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'libjasper1']
+1m9.7s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'libkrb5-3']
+1m9.8s DUMP: 
+  (Reading database ... 6649 files and directories currently installed.)
+  Removing libkrb5-3 ...
+  Purging configuration files for libkrb5-3 ...
+1m9.8s DEBUG: Command ok: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'libkrb5-3']
+1m9.8s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'libcairo2']
+1m9.8s DUMP: 
+  (Reading database ... 6649 files and directories currently installed.)
+  Removing libcairo2 ...
+  Purging configuration files for libcairo2 ...
+1m9.8s DEBUG: Command ok: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'libcairo2']
+1m9.8s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'libxml2']
+1m9.9s DUMP: 
+  (Reading database ... 6649 files and directories currently installed.)
+  Removing libxml2 ...
+  Purging configuration files for libxml2 ...
+1m9.9s DEBUG: Command ok: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'libxml2']
+1m9.9s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'libxi6']
+1m9.9s DUMP: 
+  (Reading database ... 6649 files and directories currently installed.)
+  Removing libxi6 ...
+  Purging configuration files for libxi6 ...
+1m9.9s DEBUG: Command ok: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'libxi6']
+1m9.9s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'libxau6']
+1m10.0s DUMP: 
+  (Reading database ... 6649 files and directories currently installed.)
+  Removing libxau6 ...
+  Purging configuration files for libxau6 ...
+1m10.0s DEBUG: Command ok: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'libxau6']
+1m10.0s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'libxext6']
+1m10.0s DUMP: 
+  (Reading database ... 6649 files and directories currently installed.)
+  Removing libxext6 ...
+  Purging configuration files for libxext6 ...
+1m10.0s DEBUG: Command ok: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'libxext6']
+1m10.0s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'libkeyutils1']
+1m10.0s DUMP: 
+  (Reading database ... 6649 files and directories currently installed.)
+  Removing libkeyutils1 ...
+  Purging configuration files for libkeyutils1 ...
+1m10.0s DEBUG: Command ok: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'libkeyutils1']
+1m10.0s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'libxcursor1']
+1m10.1s DUMP: 
+  (Reading database ... 6649 files and directories currently installed.)
+  Removing libxcursor1 ...
+  Purging configuration files for libxcursor1 ...
+1m10.1s DEBUG: Command ok: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'libxcursor1']
+1m10.1s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'libx11-6']
+1m10.1s DUMP: 
+  (Reading database ... 6649 files and directories currently installed.)
+  Removing libx11-6 ...
+  Purging configuration files for libx11-6 ...
+1m10.1s DEBUG: Command ok: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'libx11-6']
+1m10.1s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'libatk1.0-data']
+1m10.1s DUMP: 
+  dpkg: warning: ignoring request to remove libatk1.0-data which isn't installed.
+1m10.1s DEBUG: Command ok: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'libatk1.0-data']
+1m10.1s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'libxfixes3']
+1m10.2s DUMP: 
+  (Reading database ... 6649 files and directories currently installed.)
+  Removing libxfixes3 ...
+  Purging configuration files for libxfixes3 ...
+1m10.2s DEBUG: Command ok: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'libxfixes3']
+1m10.2s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'libjpeg62']
+1m10.2s DUMP: 
+  dpkg: warning: ignoring request to remove libjpeg62 which isn't installed.
+1m10.2s DEBUG: Command ok: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'libjpeg62']
+1m10.2s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'libxcomposite1']
+1m10.2s DUMP: 
+  (Reading database ... 6649 files and directories currently installed.)
+  Removing libxcomposite1 ...
+  Purging configuration files for libxcomposite1 ...
+1m10.2s DEBUG: Command ok: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'libxcomposite1']
+1m10.2s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'libpcre3']
+1m10.3s DUMP: 
+  (Reading database ... 6649 files and directories currently installed.)
+  Removing libpcre3 ...
+  Purging configuration files for libpcre3 ...
+1m10.3s DEBUG: Command ok: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'libpcre3']
+1m10.3s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'libavahi-common-data']
+1m10.3s DUMP: 
+  dpkg: warning: ignoring request to remove libavahi-common-data which isn't installed.
+1m10.3s DEBUG: Command ok: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'libavahi-common-data']
+1m10.3s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'libgtk2.0-common']
+1m10.3s DUMP: 
+  dpkg: warning: ignoring request to remove libgtk2.0-common which isn't installed.
+1m10.3s DEBUG: Command ok: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'libgtk2.0-common']
+1m10.3s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'libgtk2.0-0']
+1m10.4s DUMP: 
+  (Reading database ... 6649 files and directories currently installed.)
+  Removing libgtk2.0-0 ...
+  Purging configuration files for libgtk2.0-0 ...
+1m10.4s DEBUG: Command ok: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'libgtk2.0-0']
+1m10.4s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'libgpg-error0']
+1m10.4s DUMP: 
+  (Reading database ... 6645 files and directories currently installed.)
+  Removing libgpg-error0 ...
+  Purging configuration files for libgpg-error0 ...
+1m10.4s DEBUG: Command ok: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'libgpg-error0']
+1m10.4s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'libgssapi-krb5-2']
+1m10.4s DUMP: 
+  (Reading database ... 6645 files and directories currently installed.)
+  Removing libgssapi-krb5-2 ...
+  Purging configuration files for libgssapi-krb5-2 ...
+1m10.4s DEBUG: Command ok: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'libgssapi-krb5-2']
+1m10.4s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'libdatrie1']
+1m10.5s DUMP: 
+  (Reading database ... 6645 files and directories currently installed.)
+  Removing libdatrie1 ...
+  Purging configuration files for libdatrie1 ...
+1m10.5s DEBUG: Command ok: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'libdatrie1']
+1m10.5s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'ttf-dejavu-core']
+1m10.5s DUMP: 
+  dpkg: warning: ignoring request to remove ttf-dejavu-core which isn't installed.
+1m10.5s DEBUG: Command ok: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'ttf-dejavu-core']
+1m10.5s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'libxft2']
+1m10.5s DUMP: 
+  (Reading database ... 6645 files and directories currently installed.)
+  Removing libxft2 ...
+  Purging configuration files for libxft2 ...
+1m10.5s DEBUG: Command ok: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'libxft2']
+1m10.5s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'libfreetype6']
+1m10.7s DUMP: 
+  (Reading database ... 6645 files and directories currently installed.)
+  Removing libfreetype6 ...
+  Purging configuration files for libfreetype6 ...
+1m10.7s DEBUG: Command ok: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'libfreetype6']
+1m10.7s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'ucf']
+1m10.9s DUMP: 
+  (Reading database ... 6645 files and directories currently installed.)
+  Removing ucf ...
+  Purging configuration files for ucf ...
+1m10.9s DEBUG: Command ok: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'ucf']
+1m10.9s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'libthai0']
+1m10.9s DUMP: 
+  (Reading database ... 6643 files and directories currently installed.)
+  Removing libthai0 ...
+  Purging configuration files for libthai0 ...
+1m10.9s DEBUG: Command ok: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'libthai0']
+1m10.9s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'fontconfig-config']
+1m11.1s DUMP: 
+  (Reading database ... 6643 files and directories currently installed.)
+  Removing fontconfig-config ...
+  Purging configuration files for fontconfig-config ...
+1m11.1s DEBUG: Command ok: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'fontconfig-config']
+1m11.1s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'libxcb-render0']
+1m11.1s DUMP: 
+  (Reading database ... 6610 files and directories currently installed.)
+  Removing libxcb-render0 ...
+  Purging configuration files for libxcb-render0 ...
+1m11.1s DEBUG: Command ok: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'libxcb-render0']
+1m11.1s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'libgnutls26']
+1m11.2s DUMP: 
+  (Reading database ... 6610 files and directories currently installed.)
+  Removing libgnutls26 ...
+  Purging configuration files for libgnutls26 ...
+1m11.2s DEBUG: Command ok: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'libgnutls26']
+1m11.2s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'libpango1.0-0']
+1m11.2s DUMP: 
+  (Reading database ... 6610 files and directories currently installed.)
+  Removing libpango1.0-0 ...
+  Purging configuration files for libpango1.0-0 ...
+1m11.2s DEBUG: Command ok: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'libpango1.0-0']
+1m11.2s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'libtasn1-3']
+1m11.3s DUMP: 
+  (Reading database ... 6610 files and directories currently installed.)
+  Removing libtasn1-3 ...
+  Purging configuration files for libtasn1-3 ...
+1m11.3s DEBUG: Command ok: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'libtasn1-3']
+1m11.3s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'libexpat1']
+1m11.3s DUMP: 
+  (Reading database ... 6610 files and directories currently installed.)
+  Removing libexpat1 ...
+  Purging configuration files for libexpat1 ...
+1m11.3s DEBUG: Command ok: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'libexpat1']
+1m11.3s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'libxdmcp6']
+1m11.3s DUMP: 
+  (Reading database ... 6610 files and directories currently installed.)
+  Removing libxdmcp6 ...
+  Purging configuration files for libxdmcp6 ...
+1m11.3s DEBUG: Command ok: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'libxdmcp6']
+1m11.3s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'libfontconfig1']
+1m11.4s DUMP: 
+  (Reading database ... 6610 files and directories currently installed.)
+  Removing libfontconfig1 ...
+  Purging configuration files for libfontconfig1 ...
+1m11.4s DEBUG: Command ok: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'libfontconfig1']
+1m11.4s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', '--pending']
+1m11.4s DEBUG: Command ok: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', '--pending']
+1m11.4s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'usbview']
+1m11.4s DUMP: 
+  (Reading database ... 6610 files and directories currently installed.)
+  Removing usbview ...
+  Purging configuration files for usbview ...
+1m11.4s DEBUG: Command ok: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', 'usbview']
+1m11.4s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', '--pending']
+1m11.4s DEBUG: Command ok: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', '--pending']
+1m11.4s INFO: Running scripts post_purge
+1m11.4s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'tmp/scripts/post_purge_exceptions']
+1m11.4s DUMP: 
+  Debug: running script tmp/scripts/post_purge_exceptions
+1m11.4s DEBUG: Command ok: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'tmp/scripts/post_purge_exceptions']
+1m11.4s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', '--pending']
+1m11.5s DEBUG: Command ok: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--purge', '--pending']
+1m11.5s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', '--pending']
+1m11.5s DEBUG: Command ok: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'dpkg', '--remove', '--pending']
+1m11.7s DEBUG: No broken symlinks as far as we can find.
+1m13.1s INFO: PASS: Installation and purging test.
+1m13.1s INFO: Can't test upgrades: -a or --apt option used.
+1m13.1s DEBUG: Starting command: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'umount', '/proc']
+1m13.1s DEBUG: Command ok: ['chroot', '/org/piuparts.debian.org/tmp/tmpC0lgRW', 'umount', '/proc']
+1m13.5s DEBUG: Removed directory tree at /org/piuparts.debian.org/tmp/tmpC0lgRW
+1m13.5s INFO: PASS: All tests.
+1m13.5s INFO: piuparts run ends.
+
+End: 2011-05-22 10:50:18 UTC

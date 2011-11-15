@@ -1,0 +1,443 @@
+%PDF-1.4
+%“Œ‹ž ReportLab Generated PDF document http://www.reportlab.com
+% 'BasicFonts': class PDFDictionary 
+1 0 obj
+% The standard fonts dictionary
+<< /F1 2 0 R
+ /F2 3 0 R
+ /F3 8 0 R >>
+endobj
+% 'F1': class PDFType1Font 
+2 0 obj
+% Font Helvetica
+<< /BaseFont /Helvetica
+ /Encoding /WinAnsiEncoding
+ /Name /F1
+ /Subtype /Type1
+ /Type /Font >>
+endobj
+% 'F2': class PDFType1Font 
+3 0 obj
+% Font Helvetica-Bold
+<< /BaseFont /Helvetica-Bold
+ /Encoding /WinAnsiEncoding
+ /Name /F2
+ /Subtype /Type1
+ /Type /Font >>
+endobj
+% 'Annot.NUMBER1': class PDFDictionary 
+4 0 obj
+<< /A << /S /URI
+ /Type /Action
+ /URI (http://wiki.debian.org/piuparts) >>
+ /Border [ 0
+ 0
+ 0 ]
+ /Rect [ 118.9952
+ 719.7736
+ 159.3713
+ 731.7736 ]
+ /Subtype /Link
+ /Type /Annot >>
+endobj
+% 'Annot.NUMBER2': class PDFDictionary 
+5 0 obj
+<< /A << /S /URI
+ /Type /Action
+ /URI (http://piuparts.debian.org/) >>
+ /Border [ 0
+ 0
+ 0 ]
+ /Rect [ 142.5779
+ 707.7736
+ 232.2754
+ 719.7736 ]
+ /Subtype /Link
+ /Type /Annot >>
+endobj
+% 'Annot.NUMBER3': class PDFDictionary 
+6 0 obj
+<< /A << /S /URI
+ /Type /Action
+ /URI (http://www.debian.org/releases/sid/) >>
+ /Border [ 0
+ 0
+ 0 ]
+ /Rect [ 82.73408
+ 677.7736
+ 98.32524
+ 689.7736 ]
+ /Subtype /Link
+ /Type /Annot >>
+endobj
+% 'Annot.NUMBER4': class PDFDictionary 
+7 0 obj
+<< /A << /S /URI
+ /Type /Action
+ /URI (http://piuparts.debian.org/sid/broken_symlinks_issue.html) >>
+ /Border [ 0
+ 0
+ 0 ]
+ /Rect [ 234.5211
+ 677.7736
+ 401.8369
+ 689.7736 ]
+ /Subtype /Link
+ /Type /Annot >>
+endobj
+% 'F3': class PDFType1Font 
+8 0 obj
+% Font Courier
+<< /BaseFont /Courier
+ /Encoding /WinAnsiEncoding
+ /Name /F3
+ /Subtype /Type1
+ /Type /Font >>
+endobj
+% 'Page1': class PDFPage 
+9 0 obj
+% Page dictionary
+<< /Annots [ 4 0 R
+ 5 0 R
+ 6 0 R
+ 7 0 R ]
+ /Contents 16 0 R
+ /MediaBox [ 0
+ 0
+ 595.2756
+ 841.8898 ]
+ /Parent 15 0 R
+ /Resources << /Font 1 0 R
+ /ProcSet [ /PDF
+ /Text
+ /ImageB
+ /ImageC
+ /ImageI ] >>
+ /Rotate 0
+ /Trans <<  >>
+ /Type /Page >>
+endobj
+% 'Page2': class PDFPage 
+10 0 obj
+% Page dictionary
+<< /Contents 17 0 R
+ /MediaBox [ 0
+ 0
+ 595.2756
+ 841.8898 ]
+ /Parent 15 0 R
+ /Resources << /Font 1 0 R
+ /ProcSet [ /PDF
+ /Text
+ /ImageB
+ /ImageC
+ /ImageI ] >>
+ /Rotate 0
+ /Trans <<  >>
+ /Type /Page >>
+endobj
+% 'R11': class PDFCatalog 
+11 0 obj
+% Document Root
+<< /Outlines 13 0 R
+ /PageLabels 18 0 R
+ /PageMode /UseNone
+ /Pages 15 0 R
+ /Type /Catalog >>
+endobj
+% 'R12': class PDFInfo 
+12 0 obj
+<< /Author ()
+ /CreationDate (D:20111114191840+05'00')
+ /Creator (\(unspecified\))
+ /Keywords ()
+ /Producer (ReportLab PDF Library - www.reportlab.com)
+ /Subject (\(unspecified\))
+ /Title (Piuparts Broken Symlink Analysis) >>
+endobj
+% 'R13': class PDFOutlines 
+13 0 obj
+<< /Count 1
+ /First 14 0 R
+ /Last 14 0 R
+ /Type /Outlines >>
+endobj
+% 'Outline.0': class OutlineEntryObject 
+14 0 obj
+<< /Dest [ 9 0 R
+ /XYZ
+ 62.69291
+ 347.4488
+ 0 ]
+ /Parent 13 0 R
+ /Title (Usage) >>
+endobj
+% 'R15': class PDFPages 
+15 0 obj
+% page tree
+<< /Count 2
+ /Kids [ 9 0 R
+ 10 0 R ]
+ /Type /Pages >>
+endobj
+% 'R16': class PDFStream 
+16 0 obj
+% page stream
+<< /Length 5426 >>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 62.69291 741.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 4 Tm /F2 20 Tf 24 TL 72.66488 0 Td (Piuparts Broken Symlink Analysis) Tj T* -72.66488 0 Td ET
+Q
+Q
+q
+1 0 0 1 62.69291 695.0236 cm
+q
+BT 1 0 0 1 0 26 Tm .916136 Tw 12 TL /F1 10 Tf 0 0 0 rg (The Debian ) Tj 0 0 .501961 rg (Piuparts ) Tj 0 0 0 rg (program performs installation, upgrade, and removal tests against packages in the) Tj T* 0 Tw 1.31748 Tw (repositories. The ) Tj 0 0 .501961 rg (piuparts.debian.org ) Tj 0 0 0 rg (website provides a resource for collecting and reporting results of) Tj T* 0 Tw (these tests.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 653.0236 cm
+q
+BT 1 0 0 1 0 26 Tm .031163 Tw 12 TL /F1 10 Tf 0 0 0 rg (The ) Tj 0 0 .501961 rg (sid ) Tj 0 0 0 rg ("successfully tested" list has a ) Tj 0 0 .501961 rg ("but logfile contains broken symlinks" ) Tj 0 0 0 rg (sublist. As of this writing \(Nov) Tj T* 0 Tw 2.130651 Tw (2011\) 30,678 of the 31,352 'successfully tested' packages in sid report at least one broken symlink,) Tj T* 0 Tw (flagged as a warning.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 623.0236 cm
+q
+BT 1 0 0 1 0 14 Tm 1.169318 Tw 12 TL /F1 10 Tf 0 0 0 rg (This script will collect broken symlink messages from Piuparts log files, and report the broken symlinks) Tj T* 0 Tw (found, with a count of packages reporting each symlink.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 605.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (This is a typical output, based on 30623 log files containing broken symlinks, collected 11/13/11:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 359.4488 cm
+q
+q
+.73055 0 0 .73055 0 0 cm
+q
+1 0 0 1 6.6 9.034289 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.960784 .960784 .862745 rg
+n -6 -6 642 324 re B*
+Q
+q
+BT 1 0 0 1 0 302 Tm 12 TL /F3 10 Tf 0 0 0 rg (# piubsl.py linkreport db) Tj T* (count broken symlink) Tj T* (29706 /etc/motd -) Tj (>) Tj ( /var/run/motd) Tj T* ( 6382 /etc/fonts/conf.d/30-defoma.conf -) Tj (>) Tj ( /var/lib/defoma/fontconfig.d/fonts.conf) Tj T* (  877 /usr/lib/python2.6/dist-packages/python-support.pth -) Tj (>) Tj ( ../../pymodules/python2.6/.path) Tj T* (  874 /usr/lib/python2.7/dist-packages/python-support.pth -) Tj (>) Tj ( ../../pymodules/python2.7/.path) Tj T* (  757 /usr/share/pyshared/numpy/core/include/numpy/nummacro.h -) Tj (>) Tj ( ../../../numarray/numpy/nummacro.h) Tj T* (  757 /usr/share/pyshared/numpy/core/include/numpy/ieeespecial.h -) Tj (>) Tj ( ../../../numarray/numpy/ieeespecial.h) Tj T* (  757 /usr/share/pyshared/numpy/core/include/numpy/numcomplex.h -) Tj (>) Tj ( ../../../numarray/numpy/numcomplex.h) Tj T* (  757 /usr/share/pyshared/numpy/core/include/numpy/libnumarray.h -) Tj (>) Tj ( ../../../numarray/numpy/libnumarray.h) Tj T* (  757 /usr/share/pyshared/numpy/core/include/numpy/arraybase.h -) Tj (>) Tj ( ../../../numarray/numpy/arraybase.h) Tj T* (  757 /usr/share/pyshared/numpy/core/include/numpy/cfunc.h -) Tj (>) Tj ( ../../../numarray/numpy/cfunc.h) Tj T* (  536 /usr/lib/gcc/x86_64-linux-gnu/4.6/4.6 -) Tj (>) Tj ( 4.6) Tj T* (  517 /usr/share/doc/libgtk-3-0/README.gz -) Tj (>) Tj ( ../libgtk-3-common/README.gz) Tj T* (  399 /usr/share/dict/words -) Tj (>) Tj ( /etc/dictionaries-common/words) Tj T* (  393 /usr/lib/ispell/default.aff -) Tj (>) Tj ( /etc/dictionaries-common/default.aff) Tj T* (  393 /usr/lib/ispell/default.hash -) Tj (>) Tj ( /etc/dictionaries-common/default.hash) Tj T* (  368 /usr/share/man/man1/2to3.1.gz -) Tj (>) Tj ( 2to3-2.6.1.gz) Tj T* (  362 /usr/include/python2.6/numpy -) Tj (>) Tj ( ../../lib/pymodules/python2.6/numpy/core/include/numpy) Tj T* (  362 /usr/include/python2.6_d/numpy -) Tj (>) Tj ( ../../lib/pymodules/python2.6/numpy/core/include/numpy) Tj T* (  335 /usr/include/python2.7_d/numpy -) Tj (>) Tj ( ../../lib/pymodules/python2.7/numpy/core/include/numpy) Tj T* (  335 /usr/include/python2.7/numpy -) Tj (>) Tj ( ../../lib/pymodules/python2.7/numpy/core/include/numpy) Tj T* (  128 /usr/lib/xulrunner-1.9.1/dictionaries -) Tj (>) Tj ( ../../share/hunspell) Tj T* (  107 /usr/share/doc/libgtk-3-bin/README.gz -) Tj (>) Tj ( ../libgtk-3-common/README.gz) Tj T* (   91 /usr/share/doc/python-simplejson/_static/sidebar.js -) Tj (>) Tj ( ../../../javascript/sphinxdoc/1.0/sidebar.js) Tj T* (...) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 326.4488 cm
+q
+BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (Usage) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 308.4488 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Main program help:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 83.24876 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.960784 .960784 .862745 rg
+n -6 -6 468.6898 216 re B*
+Q
+q
+BT 1 0 0 1 0 194 Tm 12 TL /F3 10 Tf 0 0 0 rg (# piubsl.py -h) Tj T* (usage: piubsl.py [-h] [-v] {initdb,addlog,linkreport,linkdetail} ...) Tj T*  T* (Analyze Piuparts broken symlinks) Tj T*  T* (Using log files available under e.g.) Tj T*  T* (    http://piuparts.debian.org/sid/broken_symlinks_issue.html) Tj T*  T* (analyze the frequency and source of "Broken symlink" warnings) Tj T*  T* (positional arguments) Tj T* (  {initdb,addlog,linkreport,linkdetail}) Tj T* (                        command help) Tj T* (    initdb              initialize the database file) Tj T* (    addlog              add a log file to the database) Tj T* (    linkreport          print a summary of broken symlinks found) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+ 
+endstream
+endobj
+% 'R17': class PDFStream 
+17 0 obj
+% page stream
+<< /Length 2697 >>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 62.69291 667.8236 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.960784 .960784 .862745 rg
+n -6 -6 468.6898 96 re B*
+Q
+q
+BT 1 0 0 1 0 74 Tm 12 TL /F3 10 Tf 0 0 0 rg (    linkdetail          print a summary of packages related to a broken link) Tj T*  T* (optional arguments:) Tj T* (  -h, --help            show this help message and exit) Tj T* (  -v) Tj T*  T* (use 'piubsl.py ) Tj (<) Tj (cmd) Tj (>) Tj ( -h for command-specific help) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 647.8236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Initialize a database:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 506.6236 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.960784 .960784 .862745 rg
+n -6 -6 468.6898 132 re B*
+Q
+q
+0 0 0 rg
+BT 1 0 0 1 0 110 Tm /F3 10 Tf 12 TL (# piubsl.py initdb -h) Tj T* (usage: piubsl.py initdb [-h] dbfile) Tj T*  T* (Initialize the sqlite database file to contain symlink stats) Tj T*  T* (positional arguments:) Tj T* (  dbfile      the name of the database file) Tj T*  T* (optional arguments:) Tj T* (  -h, --help  show this help message and exit) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 486.6236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Add a log to the database:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 333.4236 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.960784 .960784 .862745 rg
+n -6 -6 468.6898 144 re B*
+Q
+q
+0 0 0 rg
+BT 1 0 0 1 0 122 Tm /F3 10 Tf 12 TL (# piubsl addlog -h) Tj T* (usage: piubsl.py addlog [-h] dbfile [logfiles [logfiles ...]]) Tj T*  T* (parse a single Piuparts log file into the database) Tj T*  T* (positional arguments:) Tj T* (  dbfile      the name of the database file) Tj T* (  logfiles    the name of the logfile \(omit for stdin\)) Tj T*  T* (optional arguments:) Tj T* (  -h, --help  show this help message and exit) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 313.4236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (And output the link report:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 172.2236 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.960784 .960784 .862745 rg
+n -6 -6 468.6898 132 re B*
+Q
+q
+0 0 0 rg
+BT 1 0 0 1 0 110 Tm /F3 10 Tf 12 TL (# piubsl linkreport -h) Tj T* (usage: piubsl.py linkreport [-h] dbfile) Tj T*  T* (Print a report of broken symlinks found in the log files) Tj T*  T* (positional arguments:) Tj T* (  dbfile      the name of the database file) Tj T*  T* (optional arguments:) Tj T* (  -h, --help  show this help message and exit) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+ 
+endstream
+endobj
+% 'R18': class PDFPageLabels 
+18 0 obj
+% Document Root
+<< /Nums [ 0
+ 19 0 R
+ 1
+ 20 0 R ] >>
+endobj
+% 'R19': class PDFPageLabel 
+19 0 obj
+% None
+<< /S /D
+ /St 1 >>
+endobj
+% 'R20': class PDFPageLabel 
+20 0 obj
+% None
+<< /S /D
+ /St 2 >>
+endobj
+xref
+0 21
+0000000000 65535 f
+0000000113 00000 n
+0000000233 00000 n
+0000000398 00000 n
+0000000585 00000 n
+0000000834 00000 n
+0000001079 00000 n
+0000001332 00000 n
+0000001595 00000 n
+0000001754 00000 n
+0000002077 00000 n
+0000002358 00000 n
+0000002517 00000 n
+0000002797 00000 n
+0000002922 00000 n
+0000003056 00000 n
+0000003172 00000 n
+0000008697 00000 n
+0000011497 00000 n
+0000011603 00000 n
+0000011680 00000 n
+trailer
+<< /ID 
+ % ReportLab generated PDF document -- digest (http://www.reportlab.com) 
+ [(\327\321\012\365&S0*\311.\010\347\203\215\361i) (\327\321\012\365&S0*\311.\010\347\203\215\361i)] 
+
+ /Info 12 0 R
+ /Root 11 0 R
+ /Size 21 >>
+startxref
+11727
+%%EOF
